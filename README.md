@@ -11,5 +11,8 @@ Run the APP
 email: admin@gmail.com
 password: P@$$w0rd
 ```
-![App Screen Shot](images/home.png)
+![Login](/images/login.PNG)
 
+![HOME](/images/home.PNG)
+
+![College Home](/images/college.PNG)

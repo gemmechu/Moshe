@@ -1,0 +1,233 @@
+﻿@Model  Institution
+<partial name="SidNavView" />
+
+<!-- MAIN -->
+<div class="main">
+    <!-- MAIN CONTENT -->
+    <div class="main-content">
+        <!-- row -->
+        <div class="row">
+            <div class="col-lg-11">
+                <a href="#addManagementData" class="btn btn-primary">Add Enrollment By Age</a>
+                <h3 class="col-cyan">Enrollment By Age List</h3>
+                <div class="panel">
+                    <div class="panel-heading">
+                    </div>
+                    <div class="panel-body">
+                        <table class="table table-sorting table-hover table-striped" id="enrollment-table">
+                            <thead>
+                                <tr>
+                                    <th>Region</th>
+                                    <th>Year</th>
+                                    <th>Program</th>
+                                    <th>males</th>
+                                    <th>females</th>
+
+                                    <th></th>
+                                </tr>
+                            </thead>
+                            <tbody></tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- / row -->
+        <hr>
+        <!-- row -->
+        <div class="row" id="addManagementData">
+            <div class="col-md-9">
+                <h3 class="page-title">Add Pastoral Region Enrollment</h3>
+                <!-- CONTACT FORM -->
+                <div class="panel">
+                    <div class="panel-heading">
+                        <h3 class="panel-title"> Pastoral Region Enrollment</h3>
+                    </div>
+                    <div class="panel-body">
+                        <form id="new-form" enctype="multipart/form-data">
+                            <div class="row">
+                                <div class="col-lg-6">
+                                    <input type="number" hidden name="institutionId" value=@Model.InstitutionId>
+
+
+                                    <div class="form-group">
+                                        <label class="control-label">Males</label>
+                                        <input type="number" class="form-control" name="males" placeholder="Males" value="0" min="0">
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="control-label">Females </label>
+                                        <input type="number" class="form-control" name="femals" placeholder="Females " value="0" min="0">
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="control-label">Year</label>
+
+                                        <select name="year" class="form-control">
+                                            <option value="0">I</option>
+                                            <option value="1">II</option>
+                                            <option value="2">III</option>
+                                            <option value="3">IV</option>
+                                            <option value="4">V</option>
+                                            <option value="5">SUMMER VI AND ABOVE</option>
+
+                                        </select>
+                                    </div>
+
+
+                                    <div class="form-group">
+                                        <label class="control-label">Study Program</label>
+
+                                        <select name="program" class="form-control">
+                                            <option value="0">Day Time</option>
+                                            <option value="1">Summer</option>
+                                            <option value="2">Extension</option>
+                                            <option value="3">Distance</option>
+
+                                        </select>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label class="control-label">Region</label>
+
+                                        <select name="region" class="form-control">
+                                            <option value="9">OROMIA</option>
+                                            <option value="10">SNNP</option>
+
+                                        </select>
+                                    </div>
+
+                                </div>
+
+                            </div>
+                            <button type="submit" class="btn btn-primary">Add </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="edit-model-modal" class="modal" role="dialog">
+    <div class="modal-dialog modal-lg">
+
+        <!-- Modal content-->
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title">Pastoral Region Enrollment</h4>
+            </div>
+            <div class="modal-body">
+                <form id="edit-form">
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <input type="number" hidden name="institutionId" value=@Model.InstitutionId>
+                            <input type="number" hidden name="pastoralRegionEnrollmentId">
+
+
+                            <div class="form-group">
+                                <label class="control-label">Males</label>
+                                <input type="number" class="form-control" name="males" placeholder="Males" value="0" min="0">
+                            </div>
+                            <div class="form-group">
+                                <label class="control-label">Females </label>
+                                <input type="number" class="form-control" name="femals" placeholder="Females " value="0" min="0">
+                            </div>
+                            <div class="form-group">
+                                <label class="control-label">Year</label>
+
+                                <select name="year" class="form-control">
+                                    <option value="0">I</option>
+                                    <option value="1">II</option>
+                                    <option value="2">III</option>
+                                    <option value="3">IV</option>
+                                    <option value="4">V</option>
+                                    <option value="5">SUMMER VI AND ABOVE</option>
+
+                                </select>
+                            </div>
+
+
+                            <div class="form-group">
+                                <label class="control-label">Study Program</label>
+
+                                <select name="program" class="form-control">
+                                    <option value="0">Day Time</option>
+                                    <option value="1">Summer</option>
+                                    <option value="2">Extension</option>
+                                    <option value="3">Distance</option>
+                                </select>
+                            </div>
+
+                            <div class="form-group">
+                                <label class="control-label">Region</label>
+
+                                <select name="region" class="form-control">
+                                    <option value="9">OROMIA</option>
+                                    <option value="10">SNNP</option>
+                                </select>
+                            </div>
+
+                        </div>
+
+                    </div>
+                    <button type="submit" class="btn btn-primary">Update </button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts
+    {
+
+    <script src="~/assets/vendor/data-tables/jquery.dataTables.min.js"></script>
+    <script src="~/assets/vendor/data-tables/dataTables.bootstrap.min.js"></script>
+    <script src="~/assets/vendor/data-tables/dataTables.colReorder.js"></script>
+    <script src="~/assets/vendor/data-tables/dataTables.tableTools.js"></script>
+    <script src="~/assets/vendor/toastr/toastr.min.js"></script>
+    <script src="~/assets/scripts/Enums.js"></script>
+
+    <script>
+        var institutionId = @Model.InstitutionId
+
+        var fetchUrl = "/api/PastoralRegionEnrollments/ByInstitution/"+ institutionId
+        var url ="/api/PastoralRegionEnrollments"
+        var tableId = "#enrollment-table"
+        var newformId = "#new-form"
+        var editformId = "#edit-form"
+        var dataId = "pastoralRegionEnrollmentId"
+
+        var selectedrow;
+
+        var columns = [
+            {
+                data: "region",
+                render: function (data, type, buildingData) {
+                    return REGION[data]
+                }
+            },
+            {
+                data: "year",
+                render: function (data, type, buildingData) {
+                    return STUDYYEAR[data]
+                }
+            },
+            {
+                data: "program",
+                render: function (data, type, buildingData) {
+                    return STUDYPROGRAM[data]
+                }
+            },
+            { data: "males" },
+            { data: "femals" },
+             {
+                data: dataId,
+                render: function (data, type, buildingData) {
+                    return '<button type="button" class="btn btn-primary btn-sm edit-data-button" data-toggle="modal" data-target="#edit-model-modal">Edit</button>         ' +
+                        '<button type = "button"  class="btn btn-danger btn-sm delete-data-button" data-model-id =' + data + ' > Delete</button > '
+                }
+            }
+
+        ]
+    </script>
+    <script src="~/assets/scripts/data-crud.js"></script>
+}

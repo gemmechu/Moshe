@@ -1,0 +1,237 @@
+﻿@Model CollegeViewModel
+<partial name="SideNavView" />
+<!-- MAIN -->
+<div class="main">
+    <!-- MAIN CONTENT -->
+    <div class="main-content">
+
+        <div class="row" id="addStaffProgram">
+            <div class="col-md-9">
+                <h3 class="page-title">Add Staff Program </h3>
+                <!-- CONTACT FORM -->
+                <div class="panel">
+                    <div class="panel-heading">
+                        <h3 class="panel-title">Add Staff Programs</h3>
+                    </div>
+                    <div class="panel-body">
+                        <form id="new-form">
+                            <div class="row">
+                                <input type="number" hidden name="collegeId" value=@Model.College.CollegeId>
+                                <div class="col-lg-6">
+                                    <div class="form-group">
+                                        <label class="control-label">Department</label>
+                                        <select name="departmentId" class="form-control">
+                                            @foreach (var department in Model.Departments)
+                                            {
+                                                <option value=@department.DepartmentId>@department.Name</option>
+                                            }
+                                        </select>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label class="control-label">Type</label>
+                                        <select name="type" class="form-control">
+                                            <option value="0">Teachers Participation In Comprehensive Continuous Profesional Development</option>
+                                            <option value="1">Teachers Participation In Higher Diploma Program</option>
+                                            <option value="2">Teachers Participation In English Language Improvement Program</option>
+                                        </select>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label class="control-label">Status</label>
+
+                                        <select name="status" class="form-control">
+                                            <option value="0">Completed</option>
+                                            <option value="1">On Training</option>
+                                            <option value="2">Not Yet Started</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+
+                                    <div class="form-group">
+                                        <label class="control-label">Males</label>
+                                        <input type="number" class="form-control" name="males" placeholder="Males"
+                                               value="0" step="1">
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="control-label">Females</label>
+                                        <input type="number" class="form-control" name="females" placeholder="Females"
+                                               value="0" step="1">
+                                    </div>
+                                </div>
+
+
+                            </div>
+                            <button type="submit" class="btn btn-primary">Add Staff Program </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr />
+        <!-- row -->
+        <div class="row">
+            <div class="col-lg-11">
+                <h3 class="col-cyan"> Staff Program List</h3>
+                <div class="panel">
+                    <div class="panel-heading">
+
+                    </div>
+                    <div class="panel-body">
+                        <table class="table table-sorting table-hover table-striped" id="staffProgram-table">
+                            <thead>
+                                <tr>
+                                    <th>College</th>
+                                    <th>Department</th>
+                                    <th>Males</th>
+                                    <th>Females</th>
+                                    <th>Type</th>
+                                    <th>Status</th>
+                                    <th></th>
+                                    <th></th>
+                                </tr>
+                            </thead>
+                            <tbody></tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="edit-model-modal" class="modal" role="dialog">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title">Edit Staff Program</h4>
+            </div>
+            <div class="modal-body">
+                <form id="edit-form">
+                    <div class="row">
+                        <input type="number" hidden name="staffProgramId">
+                        <input type="number" hidden name="collegeId" value=@Model.College.CollegeId>
+                        <div class="col-lg-6">
+                            <div class="form-group">
+                                <label class="control-label">Department</label>
+                                <select name="departmentId" class="form-control">
+                                    @foreach (var department in Model.Departments)
+                                    {
+                                        <option value=@department.DepartmentId>@department.Name</option>
+                                    }
+                                </select>
+                            </div>
+
+                            <div class="form-group">
+                                <label class="control-label">Type</label>
+                                <select name="type" class="form-control">
+                                    <option value="0">Teachers Participation In Comprehensive Continuous Profesional Development</option>
+                                    <option value="1">Teachers Participation In Higher Diploma Program</option>
+                                    <option value="2">Teachers Participation In English Language Improvement Program</option>
+                                </select>
+                            </div>
+                            <div class="">
+                                <div class="form-group">
+                                    <label class="control-label">Status</label>
+
+                                    <select name="status" class="form-control">
+                                        <option value="0">Completed</option>
+                                        <option value="1">On Training</option>
+                                        <option value="2">Not Yet Started</option>
+                                    </select>
+                                </div>
+                            </div>
+
+
+                        </div>
+                        <div class="col-lg-6">
+
+
+                            <div class="form-group">
+                                <label class="control-label">Males</label>
+                                <input type="number" class="form-control" name="males" placeholder="Males"
+                                       value="0" step="1">
+                            </div>
+
+
+                            <div class="form-group">
+                                <label class="control-label">Females</label>
+                                <input type="number" class="form-control" name="females" placeholder="Females"
+                                       value="0" step="1">
+                            </div>
+
+
+                        </div>
+
+
+
+
+                    </div>
+                    <div class="form-group">
+                        <button type="submit" class="btn btn-primary"> Update </button>
+                    </div>
+                </form>
+            </div>
+
+        </div>
+
+    </div>
+</div>
+
+@section Scripts
+    {
+
+    <script src="~/assets/vendor/data-tables/jquery.dataTables.min.js"></script>
+    <script src="~/assets/vendor/data-tables/dataTables.bootstrap.min.js"></script>
+    <script src="~/assets/vendor/data-tables/dataTables.colReorder.js"></script>
+    <script src="~/assets/vendor/data-tables/dataTables.tableTools.js"></script>
+    <script src="~/assets/vendor/toastr/toastr.min.js"></script>
+    <script src="~/assets/scripts/Enums.js"></script>
+
+    <script>
+
+        var url = "/api/StaffPrograms/"
+        var tableId = "#staffProgram-table"
+        var newformId = "#new-form"
+        var editformId = "#edit-form"
+        var dataId = "staffProgramId"
+        var collegeid = @Model.College.CollegeId
+        var fetchUrl = "/api/StaffPrograms/ByCollege/" + collegeid
+
+        var columns = [
+            { data: "college.name"},
+            { data: "department.name"},
+            { data: "males" },
+            { data: "females" },
+            {
+                data: "type",
+                render: function (data, type, staffProgram) {
+                    return PROGRAMTYPE[data]
+                }
+            },
+            {
+                data: "status",
+                render: function (data, type, staffProgram) {
+                    return PROGRAMSTATUS[data]
+                }
+            },
+            {
+                data: "staffProgramId",
+                render: function (data, type, staffProgram) {
+                    return '<button type="button" class="btn btn-primary btn-sm edit-data-button" data-toggle="modal" data-target="#edit-model-modal">Edit</button> '
+                }
+            },
+            {
+                data: "staffProgramId",
+                render: function (data, type, staffProgram) {
+                    return '<button type = "button"  class="btn btn-danger btn-sm delete-data-button" data-model-id =' + data + ' > Delete</button > '
+                }
+            }
+        ]
+
+
+    </script>
+    <script src="~/assets/scripts/data-crud.js"></script>
+}

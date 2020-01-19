@@ -1,0 +1,322 @@
+﻿@Model CollegeViewModel
+<partial name="SideNavView" />
+<!-- MAIN -->
+<div class="main">
+    <!-- MAIN CONTENT -->
+    <div class="main-content">
+
+
+        <!-- row -->
+        <div class="row" id="addBuildingData">
+            <div class="col-md-9">
+                <h3 class="page-title">Add Building Data</h3>
+                <!-- CONTACT FORM -->
+                <div class="panel">
+                    <div class="panel-heading">
+                        <h3 class="panel-title"> Building Data</h3>
+                    </div>
+                    <div class="panel-body">
+                        <form id="new-form" enctype="multipart/form-data">
+                            <div class="row">
+                                <input type="number" hidden name="collegeId" value=@Model.College.CollegeId>
+                                <div class="col-lg-6">
+                                    <div class="form-group">
+                                        <label class="control-label">Contractor Name</label>
+                                        <input type="text" class="form-control" name="nameOfContractor" placeholder="Name of Contractor">
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="control-label">Start Date</label>
+                                        <input type="date" class="form-control" name="startDate" placeholder="Start Date">
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="form-group">
+                                        <label class="control-label">Consultant Name</label>
+                                        <input type="text" class="form-control" name="nameOfConsultant" placeholder="Name of Consultant">
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="control-label">Completion Date</label>
+                                        <input type="date" class="form-control" name="completionDate" placeholder="Completion Date">
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="form-group">
+                                        <label class="control-label">Building Name Or Code</label>
+                                        <input type="text" class="form-control" name="nameOrCodeOfBuilding" placeholder="Name or Code Of The Building">
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="control-label">Budget Allocated</label>
+                                        <input type="number" class="form-control" name="budgetAllocated" placeholder="Budget Allocated" value="0" min="0">
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="form-group">
+                                        <label class="control-label">Current Status</label>
+                                        <input type="range" class="form-control" name="status" placeholder="status" value="0" min="0" max="100" maxlength="100">
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="control-label">Financial Status</label>
+                                        <input type="number" class="form-control" name="financialStatus" placeholder="Financial Status" value="0" min="0">
+                                    </div>
+                                </div>
+                                <div class="col-lg-4">
+                                    <div class="form-group">
+                                        <label class="control-label">Is For Admin</label>
+                                        <input type="checkbox" class="form-check-input" name="isForAdmin" id="isForAdmin" placeholder="Is For Admin" value="false" />
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="control-label">Is For Class Rooms</label>
+                                        <input type="checkbox" class="form-check-input" name="isForClassRooms" id="isForClassRooms" placeholder="Is For Class Rooms" value="false" />
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="control-label">Is For Library</label>
+                                        <input type="checkbox" class="form-check-input" name="isForLibrary" id="isForLibrary" placeholder="Is For Library" value="false" />
+                                    </div>
+                                </div>
+                                <div class="col-lg-4">
+                                    <div class="form-group">
+                                        <label class="control-label">Is For Dormitories</label>
+                                        <input type="checkbox" class="form-check-input" name="isForDormitories" id="isForDormitories" placeholder="Is For Dormitories" value="false" />
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="control-label">Is For Staff Residence</label>
+                                        <input type="checkbox" class="form-check-input" name="isForStaffResidence" id="isForStaffResidence" placeholder="Is For Staff Residence" value="false" />
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="control-label">Is For Workshop</label>
+                                        <input type="checkbox" class="form-check-input" name="isForWorkshop" id="isForWorkshop" placeholder="Is For Workshop" value="false" />
+                                    </div>
+                                </div>
+                                <div class="col-lg-4">
+                                    <div class="form-group">
+                                        <label class="control-label">Is For Laboratories</label>
+                                        <input type="checkbox" class="form-check-input" name="isForLaboratories" id="isForLaboratories" placeholder="Is For Laboratories" value="false" />
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="control-label">Is For Cafetaria</label>
+                                        <input type="checkbox" class="form-check-input" name="isForCafetaria" id="isForCafetaria" placeholder="Is For Cafetaria" value="false" />
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="control-label">Is For Other Purpose</label>
+                                        <input type="checkbox" class="form-check-input" name="isForOtherPurpose" id="isForOtherPurpose" placeholder="Is For Other Purpose" value="false" />
+                                    </div>
+                                </div>
+                            </div>
+                            <button type="submit" class="btn btn-primary">Add Building Data </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div class="row">
+            <div class="col-lg-12">
+
+                <h3 class="page-title"> Building Data List</h3>
+                <div class="panel">
+                    <div class="panel-body">
+                        <table class="table table-sorting table-hover table-striped" id="buildingData-table">
+                            <thead>
+                                <tr>
+                                    <th>Name</th>
+                                    <th>Start Date</th>
+                                    <th>Finish Date</th>
+                                    <th>Contractor</th>
+                                    <th>Consultant</th>
+                                    <th>Allocated Budget</th>
+                                    <th>Financial Status</th>
+                                    <th>Status(%)</th>
+                                    <th></th>
+                                    <th></th>
+
+                                </tr>
+                            </thead>
+                            <tbody></tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div> 
+    </div>
+</div>
+<div id="edit-model-modal" class="modal" role="dialog">
+    <div class="modal-dialog modal-lg">
+
+        <!-- Modal content-->
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title">Edit Building Data</h4>
+            </div>
+            <div class="modal-body">
+                <form id="edit-form">
+                    <div class="row">
+                        <input type="number" hidden name="collegeId" value=@Model.College.CollegeId>
+                        <input type="number" hidden name="buildingDataId">
+                        <div class="col-lg-6">
+                            <div class="form-group">
+                                <label class="control-label">Contractor Name</label>
+                                <input type="text" class="form-control" name="nameOfContractor" placeholder="Name of Contractor">
+                            </div>
+                            <div class="form-group">
+                                <label class="control-label">Start Date</label>
+                                <input type="date" class="form-control" name="startDate" placeholder="Start Date">
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="form-group">
+                                <label class="control-label">Consultant Name</label>
+                                <input type="text" class="form-control" name="nameOfConsultant" placeholder="Name of Consultant">
+                            </div>
+                            <div class="form-group">
+                                <label class="control-label">Completion Date</label>
+                                <input type="date" class="form-control" name="completionDate" placeholder="Completion Date">
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="form-group">
+                                <label class="control-label">Building Name Or Code</label>
+                                <input type="text" class="form-control" name="nameOrCodeOfBuilding" placeholder="Name or Code Of The Building">
+                            </div>
+                            <div class="form-group">
+                                <label class="control-label">Budget Allocated</label>
+                                <input type="number" class="form-control" name="budgetAllocated" placeholder="Budget Allocated" value="0" min="0">
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="form-group">
+                                <label class="control-label">Current Status</label>
+                                <input type="range" class="form-control" name="status" placeholder="status" value="0" min="0" max="100" maxlength="100">
+                            </div>
+                            <div class="form-group">
+                                <label class="control-label">Financial Status</label>
+                                <input type="number" class="form-control" name="financialStatus" placeholder="Financial Status" value="0" min="0">
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="form-group">
+                                <label class="control-label">Is For Admin</label>
+                                <input type="checkbox" class="form-check-input" name="isForAdmin" id="isForAdmin" placeholder="Is For Admin"  />
+                            </div>
+                            <div class="form-group">
+                                <label class="control-label">Is For Class Rooms</label>
+                                <input type="checkbox" class="form-check-input" name="isForClassRooms" id="isForClassRooms" placeholder="Is For Class Rooms"  />
+                            </div>
+                            <div class="form-group">
+                                <label class="control-label">Is For Library</label>
+                                <input type="checkbox" class="form-check-input" name="isForLibrary" id="isForLibrary" placeholder="Is For Library"  />
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="form-group">
+                                <label class="control-label">Is For Dormitories</label>
+                                <input type="checkbox" class="form-check-input" name="isForDormitories" id="isForDormitories" placeholder="Is For Dormitories"  />
+                            </div>
+                            <div class="form-group">
+                                <label class="control-label">Is For Staff Residence</label>
+                                <input type="checkbox" class="form-check-input" name="isForStaffResidence" id="isForStaffResidence" placeholder="Is For Staff Residence"  />
+                            </div>
+                            <div class="form-group">
+                                <label class="control-label">Is For Workshop</label>
+                                <input type="checkbox" class="form-check-input" name="isForWorkshop" id="isForWorkshop" placeholder="Is For Workshop"  />
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="form-group">
+                                <label class="control-label">Is For Laboratories</label>
+                                <input type="checkbox" class="form-check-input" name="isForLaboratories" id="isForLaboratories" placeholder="Is For Laboratories"  />
+                            </div>
+                            <div class="form-group">
+                                <label class="control-label">Is For Cafetaria</label>
+                                <input type="checkbox" class="form-check-input" name="isForCafetaria" id="isForCafetaria" placeholder="Is For Cafetaria"  />
+                            </div>
+                            <div class="form-group">
+                                <label class="control-label">Is For Other Purpose</label>
+                                <input type="checkbox" class="form-check-input" name="isForOtherPurpose" id="isForOtherPurpose" placeholder="Is For Other Purpose"  />
+                            </div>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Update </button>
+
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts
+    {
+
+    <script src="~/assets/vendor/data-tables/jquery.dataTables.min.js"></script>
+    <script src="~/assets/vendor/data-tables/dataTables.bootstrap.min.js"></script>
+    <script src="~/assets/vendor/data-tables/dataTables.colReorder.js"></script>
+    <script src="~/assets/vendor/data-tables/dataTables.tableTools.js"></script>
+    <script src="~/assets/vendor/toastr/toastr.min.js"></script>
+    <script src="~/assets/scripts/Enums.js"></script>
+
+    <script>
+        $("#isForAdmin").change(function () {
+            $("#isForAdmin").attr('value', this.checked);
+        });
+        $("#isForClassRooms").change(function () {
+            $("#isForClassRooms").attr('value', this.checked);
+        });
+        $("#isForLibrary").change(function () {
+            $("#isForLibrary").attr('value', this.checked);
+        });
+        $("#isForDormitories").change(function () {
+            $("#isForDormitories").attr('value', this.checked);
+        });
+        $("#isForStaffResidence").change(function () {
+            $("#isForStaffResidence").attr('value', this.checked);
+        });
+        $("#isForWorkshop").change(function () {
+            $("#isForWorkshop").attr('value', this.checked);
+        });
+        $("#isForLaboratories").change(function () {
+            $("#isForLaboratories").attr('value', this.checked);
+        });
+        $("#isForCafetaria").change(function () {
+            $("#isForCafetaria").attr('value', this.checked);
+        });
+        $("#isForOtherPurpose").change(function () {
+            $("#isForOtherPurpose").attr('value', this.checked);
+        });
+
+        var url = "/api/buildingDatas"
+        var tableId = "#buildingData-table"
+        var newformId = "#new-form"
+        var editformId = "#edit-form"
+        var dataId = "buildingDataId"
+
+        var collegeId = @Model.College.CollegeId
+        var fetchUrl = "/api/buildingDatas/ByCollege/" + collegeId
+
+
+        var selectedrow;
+
+        var columns = [
+            { data: "nameOrCodeOfBuilding" },
+            { data: "startDate" },
+            { data: "completionDate" },
+            { data: "nameOfContractor" },
+            { data: "nameOfConsultant" },
+            { data: "budgetAllocated" },
+            { data: "financialStatus" },
+            { data: "status" }, {
+                data: dataId,
+                render: function (data, type, buildingData) {
+                    return '<button type="button" class="btn btn-primary btn-sm edit-data-button" data-toggle="modal" data-target="#edit-model-modal">Edit</button>         '
+                }
+            },
+            {
+                data: dataId,
+                render: function (data, type, buildingData) {
+                    return  '<button type = "button"  class="btn btn-danger btn-sm delete-data-button" data-model-id =' + data + ' > Delete</button > '
+                }
+            }
+
+        ]
+    </script>
+    <script src="~/assets/scripts/data-crud.js"></script>
+}

@@ -1,0 +1,230 @@
+﻿@Model  DepartmentInternshipsViewModel
+<partial name="SideNavView" />
+<div class="main">
+    <div class="main-content">
+        <div class="row" id="addInternships">
+            <div class="col-md-9">
+                <h3 class="page-title">Add Internship</h3>
+                <div class="panel"> 
+                    <div class="panel-body">
+                        <form id="new-form" enctype="multipart/form-data">
+                            <div class="row">
+                                <div class="col-lg-12">
+                                    <input type="number" hidden name="departmentId" value=@Model.Department.DepartmentId>
+                                    <div class="col-lg-6">
+                                        <div class="form-group">
+                                            <label class="control-label">Number Of Industries Linked</label>
+                                            <input type="number" class="form-control" name="numberOfIndustriesLinked" placeholder="Linked Industries"
+                                                   value="0" min="0">
+                                        </div>
+                                        <div class="form-group">
+                                            <label class="control-label">Number Of Students On Internship at 2nd Year</label>
+                                            <input type="number" class="form-control" name="numberOfStudentsOnInternship_2ndYear" placeholder="Internship Amount"
+                                                   value="0" min="0">
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <div class="form-group">
+                                            <label class="control-label">Training Area</label>
+                                            <input type="text" class="form-control" name="trainingArea" placeholder="Like skills , ..." />
+                                        </div>
+                                        <div class="form-group">
+                                            <label class="control-label">Number Of Students On Internship at 3rd Year</label>
+                                            <input type="number" class="form-control" name="numberOfStudentsOnInternship_3rdYear" placeholder="Internship Amount"
+                                                   value="0" min="0">
+                                        </div>
+                                    </div>
+                                    <br />
+                                    <div class="col-lg-6">
+                                        <div class="form-group">
+                                            <label class="control-label">Number Of Students On Internship at 4th Year</label>
+                                            <input type="number" class="form-control" name="numberOfStudentsOnInternship_4thYear" placeholder="Internship Amount"
+                                                   value="0" min="0">
+                                        </div>
+                                        <div class="form-group">
+                                            <label class="control-label">Number Of Students On Internship at 6th Year</label>
+                                            <input type="number" class="form-control" name="numberOfStudentsOnInternship_6thYear" placeholder="Internship Amount"
+                                                   value="0" min="0">
+                                        </div>
+                                    </div>
+                                    <br />
+                                    <div class="col-lg-6">
+                                        <div class="form-group">
+
+                                            
+                                            <label class="control-label">Number Of Students On Internship at 5th Year</label>
+                                            <input type="number" class="form-control" name="numberOfStudentsOnInternship_5thYear" placeholder="Internship Amount"
+                                                   value="0" min="0">
+                                        </div>
+                                        <div class="form-group">
+                                            <label class="control-label">Number Of Students On Internship at 7th Year</label>
+                                            <input type="number" class="form-control" name="numberOfStudentsOnInternship_7thYear" placeholder="Internship Amount"
+                                                   value="0" min="0">
+                                        </div>
+                                    </div>
+                                    <br />
+                                </div>
+                            </div>
+
+                            <button type="submit" class="btn btn-primary">Add Internships</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div class="row">
+            <div class="col-lg-11">
+                <h3 class="col-cyan"> Deparment Internships</h3>
+                <div class="panel">
+                    <div class="panel-heading">
+                    </div>
+                    <div class="panel-body">
+                        <table class="table table-sorting table-hover table-striped" id="internship-table">
+                            <thead>
+                                <tr>
+                                    <th>Linked Industries</th>
+                                    <th>Training Area</th>
+                                    <th>At 2nd year</th>
+                                    <th>At 3rd year</th>
+                                    <th>At 4th year</th>
+                                    <th>At 5th year</th>
+                                    <th>At 6th year</th>
+                                    <th>At 7th year</th>
+                                    <th></th>
+                                    <th></th>
+                                </tr>
+                            </thead>
+                            <tbody></tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div id="edit-model-modal" class="modal" role="dialog">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title">Edit Internship</h4>
+            </div>
+            <div class="modal-body">
+                <form id="edit-form">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <input type="text" name="internshipId" hidden />
+                            <input type="number" hidden name="departmentId" value=@Model.Department.DepartmentId>
+                            <div class="col-lg-6">
+                                <div class="form-group">
+                                    <label class="control-label">Number Of Industries Linked</label>
+                                    <input type="number" class="form-control" name="numberOfIndustriesLinked" placeholder="Linked Industries"
+                                           value="0" min="0">
+                                </div>
+                                <div class="form-group">
+                                    <label class="control-label">Number Of Students On Internship at 2nd Year</label>
+                                    <input type="number" class="form-control" name="numberOfStudentsOnInternship_2ndYear" placeholder="Internship Amount"
+                                           value="0" min="0">
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="form-group">
+                                    <label class="control-label">Training Area</label>
+                                    <input type="text" class="form-control" name="trainingArea" placeholder="Like skills , ..." />
+                                </div>
+                                <div class="form-group">
+                                    <label class="control-label">Number Of Students On Internship at 3rd Year</label>
+                                    <input type="number" class="form-control" name="numberOfStudentsOnInternship_3rdYear" placeholder="Internship Amount"
+                                           value="0" min="0">
+                                </div>
+                            </div>
+                            <br />
+                            <div class="col-lg-6">
+                                <div class="form-group">
+                                    <label class="control-label">Number Of Students On Internship at 4th Year</label>
+                                    <input type="number" class="form-control" name="numberOfStudentsOnInternship_4thYear" placeholder="Internship Amount"
+                                           value="0" min="0">
+                                </div>
+                                <div class="form-group">
+                                    <label class="control-label">Number Of Students On Internship at 6th Year</label>
+                                    <input type="number" class="form-control" name="numberOfStudentsOnInternship_6thYear" placeholder="Internship Amount"
+                                           value="0" min="0">
+                                </div>
+                            </div>
+                            <br />
+                            <div class="col-lg-6">
+                                <div class="form-group">
+                                    <label class="control-label">Number Of Students On Internship at 5th Year</label>
+                                    <input type="number" class="form-control" name="numberOfStudentsOnInternship_5thYear" placeholder="Internship Amount"
+                                           value="0" min="0">
+                                </div>
+                                <div class="form-group">
+
+                                    
+                                    <label class="control-label">Number Of Students On Internship at 7th Year</label>
+                                    <input type="number" class="form-control" name="numberOfStudentsOnInternship_7thYear" placeholder="Internship Amount"
+                                           value="0" min="0">
+                                </div>
+                            </div>
+                            <br />
+                        </div>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary">Update </button>
+                </form>
+            </div>
+
+        </div>
+
+    </div>
+</div>
+
+@section Scripts
+    {
+
+    <script src="~/assets/vendor/data-tables/jquery.dataTables.min.js"></script>
+    <script src="~/assets/vendor/data-tables/dataTables.bootstrap.min.js"></script>
+    <script src="~/assets/vendor/data-tables/dataTables.colReorder.js"></script>
+    <script src="~/assets/vendor/data-tables/dataTables.tableTools.js"></script>
+    <script src="~/assets/vendor/toastr/toastr.min.js"></script>
+
+
+
+    <script>
+        var url = "/api/internships"
+        var tableId = "#internship-table"
+        var newformId = "#new-form"
+        var editformId = "#edit-form"
+        var dataId = "internshipId"
+        var departmentId = @Model.Department.DepartmentId
+        var fetchUrl = "/api/internships/ByDepartment/" + departmentId
+
+        var columns = [
+            { data: "numberOfIndustriesLinked" },
+            { data: "trainingArea" },
+            { data: "numberOfStudentsOnInternship_2ndYear" },
+            { data: "numberOfStudentsOnInternship_3rdYear" },
+            { data: "numberOfStudentsOnInternship_4thYear" },
+            { data: "numberOfStudentsOnInternship_5thYear" },
+            { data: "numberOfStudentsOnInternship_6thYear" },
+            { data: "numberOfStudentsOnInternship_7thYear" },
+            {
+                data: "internshipId",
+                render: function (data, type, internship) {
+                    return '<button type="button" class="btn btn-primary btn-sm edit-data-button" data-toggle="modal" data-target="#edit-model-modal">Edit</button> '
+                }
+            },
+            {
+                data: "internshipId",
+                render: function (data, type, internship) {
+                    return '<button type = "button"  class="btn btn-danger btn-sm delete-data-button" data-model-id =' + data + ' > Delete</button > '
+                }
+            }
+        ]
+
+    </script>
+    <script src="~/assets/scripts/data-crud.js"></script>
+}

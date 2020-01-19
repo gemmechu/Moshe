@@ -1,0 +1,227 @@
+﻿
+@Model CollegeViewModel
+<partial name="SideNavView" />
+
+<!-- MAIN -->
+<div class="main">
+    <!-- MAIN CONTENT -->
+    <div class="main-content">
+
+        <!-- row -->
+        <div class="row" id="addCollege">
+            <div class="col-md-9">
+                <h3 class="page-title">Add Budget</h3>
+                <!-- CONTACT FORM -->
+                <div class="panel">
+                    <div class="panel-heading">
+                        <h3 class="panel-title">Add Budget</h3>
+                    </div>
+                    <div class="panel-body">
+                        <form id="new-form" enctype="multipart/form-data">
+                            <div class="row">
+                                <input type="number" hidden name="collegeId" value=@Model.College.CollegeId>
+                                <div class="col-lg-6">
+                                    <div class="form-group">
+                                        <label>Budget Code</label>
+                                        <select class="form-control" name="budgetDescriptionId">
+                                            @foreach (var budgetDescription in Model.BudgetDescription)
+                                            {
+                                                <option value=@budgetDescription.BudgetDescriptionId>@budgetDescription.Description</option>
+                                            }
+                                        </select>
+
+                                    </div>
+
+                                    <div class="form-group">
+                                        <input type="number" class="form-control" required="" name="allocated" placeholder="Allocated Budget" />
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="number" class="form-control" required="" name="additional" placeholder="Additional Budget" />
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="number" class="form-control" required="" name="utilized" placeholder="Utilized Budget" />
+                                    </div>
+                                    <div class="form-group">
+                                        <label>BudgetType</label>
+                                        <select class="form-control" name="budgetType">
+                                            <option value="0">RECURRENT</option>
+                                            <option value="1">CAPITAL</option>
+                                        </select>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <button type="submit" class="btn btn-primary">Submit </button>
+                        </form>
+                    </div>
+                </div>
+                <!-- END CONTACT FORM -->
+
+            </div>
+            <!--/ col-lg-6 -->
+        </div>
+
+        <!-- / row -->
+        <!-- row -->
+        <div class="row">
+            <div class="col-lg-12">
+
+                <h3 class="page-title">Budget List</h3>
+                <div class="panel">
+                    <div class="panel-heading">
+                        <h3 class="panel-title">Budget List</h3>
+                    </div>
+                    <div class="panel-body">
+                        <table class="table table-sorting table-hover table-striped" id="Budget-table">
+                            <thead>
+                                <tr>
+                                    <th>Budget Code</th>
+                                    <th>Budget Description</th>
+                                    <th>Allocated Budget</th>
+                                    <th>Additional Budget</th>
+                                    <th>Budget Utilized</th>
+                                    <th>Internal Transfer</th>
+                                    <th>Adjusted Budget</th>
+                                    <th>Difference</th>
+                                    <th>Performance in%</th>
+                                    <th></th>
+                                    <th></th>
+
+                                </tr>
+                            </thead>
+                            <tbody></tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- / row -->
+        <hr>
+
+    </div>
+    <!-- END MAIN CONTENT -->
+</div>
+<!-- END MAIN -->
+<!-- Modal -->
+<div id="edit-model-modal" class="modal" role="dialog">
+    <div class="modal-dialog modal-lg">
+
+        <!-- Modal content-->
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title">Edit Band</h4>
+            </div>
+            <div class="modal-body">
+                <form id="edit-form" >
+                    <div class="row">
+                        <input type="number" hidden name="collegeId" value=@Model.College.CollegeId>
+                        <input type="number" hidden name="budgetId">
+                        <div class="col-lg-6">
+                            <div class="form-group">
+                                <label>Budget Code</label>
+                                <select class="form-control" name="budgetDescriptionId">
+                                    @foreach (var budgetDescription in Model.BudgetDescription)
+                                    {
+                                        <option value=@budgetDescription.BudgetDescriptionId>@budgetDescription.Description</option>
+                                    }
+                                </select>
+
+                            </div>
+                           
+                            <div class="form-group">
+                                <input type="number" class="form-control" required="" name="allocated" placeholder="Allocated Budget" />
+                            </div>
+                            <div class="form-group">
+                                <input type="number" class="form-control" required="" name="additional" placeholder="Additional Budget" />
+                            </div>
+                            <div class="form-group">
+                                <input type="number" class="form-control" required="" name="utilized" placeholder="Utilized Budget" />
+                            </div>
+                            <div class="form-group">
+                                <label>BudgetType</label>
+                                <select class="form-control" name="budgetType">
+                                    <option value="0">RECURRENT</option>
+                                    <option value="1">CAPITAL</option>
+                                </select>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <button type="submit" class="btn btn-primary">Update </button>
+                </form>
+            </div>
+
+        </div>
+
+    </div>
+</div>
+
+@section Scripts
+    {
+
+    <script src="~/assets/vendor/data-tables/jquery.dataTables.min.js"></script>
+    <script src="~/assets/vendor/data-tables/dataTables.bootstrap.min.js"></script>
+    <script src="~/assets/vendor/data-tables/dataTables.colReorder.js"></script>
+    <script src="~/assets/vendor/data-tables/dataTables.tableTools.js"></script>
+    <script src="~/assets/vendor/toastr/toastr.min.js"></script>
+
+
+
+    <script>
+        var url = "/api/Budgets"
+        var tableId = "#Budget-table"
+        var newformId = "#new-form"
+        var editformId = "#edit-form"
+        var dataId = "budgetId"
+        var collegeid = @Model.College.CollegeId
+        var fetchUrl = "/api/Budgets/ByCollege/" + collegeid
+
+        var selectedrow;
+
+        var columns = [
+            { data: "budgetDescription.budgetCode" },
+            { data: "budgetDescription.description" },
+            { data: "allocated" },
+            { data: "additional" },
+            {
+                data: 'utilized',
+            },
+            {
+                data: dataId,
+                render: function (data, type, Budget) { return (Budget.allocated + Budget.additional) + '/' + (Budget.allocated - Budget.additional) }
+            },
+            {
+                data: dataId,
+                render: function (data, type, Budget) { return "a+b+c" }
+            },
+            {
+                data: dataId,
+                render: function (data, type, Budget) { return (Budget.allocated - Budget.additional) }
+            },
+            {
+                data: dataId,
+                render: function (data, type, Budget) { return 'e/d*100' }
+            },
+            {
+                data: dataId,
+                render: function (data, type, Budget) {
+                    return '<button type="button" class="btn btn-primary btn-sm edit-data-button" data-toggle="modal" data-target="#edit-model-modal">Edit</button>         '
+
+                }
+            },
+            {
+                data: dataId,
+                render: function (data, type, Budget) {
+                    return '<button type = "button"  class="btn btn-danger btn-sm delete-data-button" data-model-id =' + data + ' > Delete</button > '
+                }
+            }
+
+        ]
+
+
+    </script>
+    <script src="~/assets/scripts/data-crud.js"></script>
+}

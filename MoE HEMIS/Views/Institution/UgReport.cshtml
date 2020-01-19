@@ -1,0 +1,353 @@
+﻿    <!-- LEFT SIDEBAR -->
+    <partial name="SidNavView" />
+<!-- END LEFT SIDEBAR -->
+<!-- MAIN -->
+<div class="main">
+    <!-- MAIN CONTENT -->
+    <div class="main-content">
+        <div>
+            <h3 class="page-title">UG Regular Enrollment</h3>
+            <!-- row -->
+            <div class="row">
+                <div class="col-lg-9">
+                    <div class="panel">
+                        <div class="panel-heading">
+                            
+                        </div>
+                        <div class="panel-body">
+                            <table class="table table-sorting table-hover table-striped" id="ugReport-table">
+                                <thead>
+                                    <tr>
+                                        <th>Band</th>
+                                        <th>Department</th>
+                                        <th>Year</th>
+                                        <th>Male </th>
+                                        <th>Female</th>
+                                    </tr>
+                                </thead>
+                                <tbody></tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- / row -->
+           
+        </div>
+        <hr />
+        <div>
+            <h3 class="page-title">Foreigner Students Enrolled in Regular </h3>
+            <!-- row -->
+            <div class="row">
+                <div class="col-lg-9">
+                    <div class="panel">
+                        <div class="panel-heading">
+                            <h3 class="panel-title">Band 2:  Natural and Computational Sciences</h3>
+                        </div>
+                        <div class="panel-body">
+                            <table class="table table-sorting table-hover table-striped" id=" ">
+                                <thead>
+                                    <tr>
+                                        <th>Department</th>
+                                        <th>Year</th>
+                                        <th>Male </th>
+                                        <th>Female</th>
+                                    </tr>
+                                </thead>
+                                <tbody></tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- / row -->
+        
+        </div>
+        <hr />
+        <div>
+            <h3 class="page-title">Extension Undergraduate </h3>
+            <!-- row -->
+            <div class="row">
+                <div class="col-lg-9">
+                    <div class="panel">
+                        <div class="panel-heading">
+                            <h3 class="panel-title">Band 2:  Natural and Computational Sciences</h3>
+                        </div>
+                        <div class="panel-body">
+                            <table class="table table-sorting table-hover table-striped" id=" ">
+                                <thead>
+                                    <tr>
+                                        <th>Department</th>
+                                        <th>Year</th>
+                                        <th>Male </th>
+                                        <th>Female</th>
+                                    </tr>
+                                </thead>
+                                <tbody></tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+      
+        </div>
+        <hr />
+        <div>
+            <h3 class="page-title"> Summer Undergraduate </h3>
+            <!-- row -->
+            <div class="row">
+                <div class="col-lg-9">
+                    <div class="panel">
+                        <div class="panel-heading">
+                            <h3 class="panel-title">Band 2:  Natural and Computational Sciences</h3>
+                        </div>
+                        <div class="panel-body">
+                            <table class="table table-sorting table-hover table-striped" id=" ">
+                                <thead>
+                                    <tr>
+                                        <th>Department</th>
+                                        <th>Year</th>
+                                        <th>Male </th>
+                                        <th>Female</th>
+                                    </tr>
+                                </thead>
+                                <tbody></tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- / row -->
+         
+        </div>
+
+
+    </div>
+    <!-- END MAIN CONTENT -->
+</div>
+<!-- END MAIN -->
+<!-- Modal -->
+<div id="edit-model-modal" class="modal" role="dialog">
+    <div class="modal-dialog modal-lg">
+
+        <!-- Modal content-->
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title">Edit Band</h4>
+            </div>
+            <div class="modal-body">
+                <form id="edit-form">
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <div class="form-group">
+                                <input type="text" class="form-control" required="" name="name" placeholder="Name">
+                            </div>
+
+                            <div class="form-group">
+                                <input type="text" class="form-control" required="" name="abbrivation" placeholder="Abbrevation">
+                            </div>
+                            <div class="form-group">
+                                <label class="control-label">Users</label>
+
+                                <select name="level" class="form-control">
+                                    <option value="1">username@gmail.com</option>
+                                    <option value="2">user2name@gmail.com</option>
+                                    <option value="3">user3name@gmail.com</option>
+
+                                </select>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <button type="submit" class="btn btn-primary">Update </button>
+                </form>
+            </div>
+
+        </div>
+
+    </div>
+</div>
+
+@section Scripts
+    {
+
+    <script src="~/assets/vendor/data-tables/jquery.dataTables.min.js"></script>
+    <script src="~/assets/vendor/data-tables/dataTables.bootstrap.min.js"></script>
+    <script src="~/assets/vendor/data-tables/dataTables.colReorder.js"></script>
+    <script src="~/assets/vendor/data-tables/dataTables.tableTools.js"></script>
+    <script src="~/assets/vendor/toastr/toastr.min.js"></script>
+
+
+
+    <script>
+        var url = "/api/Enrollments/ByInstitutionStudyprogramLevel/1/0/0"
+        var tableId = "#ugReport-table"
+        var newformId = "#new-form"
+        var editformId = "#edit-form"
+
+        var selectedrow;
+
+        var columns = [
+            { data: "college.band.bandName" },
+            { data: "department.departmentName" },
+            { data: "year" },
+            { data: "males" },
+            { data: "femals" }
+           
+        ]
+
+        //Load data from remote and populate table
+        loadAndPopulateData(url, tableId, columns)
+
+
+        //Add New Data
+
+        $(newformId).on("submit", function (event) {
+            event.preventDefault();
+            addNewData(url, $(this), table)
+        });
+
+
+
+
+        // Delete Data
+
+        $(tableId).on('click', '.delete-data-button', function () {
+            deleteData($(this))
+        })
+
+
+        $(tableId).on('click', '.edit-data-button', function () {
+
+            onEditButtonClicked($(this))
+
+        })
+
+        $(editformId).on("submit", function (event) {
+            event.preventDefault();
+            editData($(this))
+
+        });
+
+
+
+
+        //Load Data
+
+        function loadAndPopulateData(url, tableId, columns) {
+
+
+            $(document).ready(function () {
+                table = $(tableId).DataTable({
+                    ajax: {
+                        url: url,
+                        dataSrc: "",
+                    },
+
+                    columns: columns
+
+                })
+
+            })
+
+
+        }
+
+        // Add Data
+
+        function addNewData(url, form, table) {
+            var data = getFormData(form);
+            var band = data.band;
+            var bandAbbreviation = data.abbreviation;
+            var applicationUser = data.username;
+            var cleanData = { band: band, abbreviation: bandAbbreviation, username: applicationUser };
+            console.log(cleanData);
+            $.ajax({
+                type: 'POST',
+                url: url,
+                data: JSON.stringify(cleanData),
+                contentType: 'application/json; utf-8',
+                dataType: 'json',
+                success: function (response) {
+                    table.row.add(response).draw()
+                    toastr.success('Added!');
+                },
+                error: function (response) {
+                    alert('Failed to Add');
+                }
+            });
+        }
+
+        // Delete Data
+        function deleteData(button) {
+            var deleteFlag = confirm("Are you sure you want to delete?")
+
+            if (!deleteFlag) {
+                return
+            }
+
+            var id = button.attr('data-model-id')
+            $.ajax({
+                type: "DELETE",
+                url: url + "/" + id,
+                success: function (response) {
+                    table.row(button.parents("tr")).remove().draw()
+                    toastr.error('Deleted!');
+                },
+            });
+        }
+
+        // On Edit Button Clicked
+
+        function onEditButtonClicked(button) {
+
+            selectedrow = table.row(button.parents("tr"))
+            var data = table.row(button.parents("tr")).data()
+
+            var $inputs = $(editformId + ' input');
+            $.each(data, function (key, value) {
+                $inputs.filter(function () {
+                    return key == this.name;
+                }).val(value);
+            });
+        }
+
+
+        // Edit Data
+
+        function editData(form) {
+
+            var data = getFormData(form);
+            var id = selectedrow.data().collegeId
+            data.collegeId = id
+
+
+            $.ajax({
+                type: "PUT",
+                url: url + "/" + id,
+                data: JSON.stringify(data),
+                contentType: "application/json",
+                success: function (response) {
+                    selectedrow.remove()
+                    table.row.add(response).draw()
+                    $('#edit-model-modal').modal('toggle');
+                    toastr.info('Edited!');
+                },
+            });
+        }
+
+        //Parse Form Data to Json
+        function getFormData($form) {
+            var unindexed_array = $form.serializeArray();
+            var indexed_array = {};
+
+            $.map(unindexed_array, function (n, i) {
+                indexed_array[n['name']] = n['value'];
+            });
+
+            return indexed_array;
+        }
+    </script>
+}

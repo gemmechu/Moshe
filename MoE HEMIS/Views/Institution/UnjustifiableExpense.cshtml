@@ -1,0 +1,77 @@
+﻿<partial name="SidNavView" />
+<!-- MAIN -->
+<div class="main">
+    <!-- MAIN CONTENT -->
+    <div class="main-content">
+
+        <!-- row -->
+        <div class="row" id="addCompletionRate">
+            <div class="col-md-9">
+                <h3 class="page-title">Unjustifiable Expense</h3>
+                <!-- CONTACT FORM -->
+                <div class="panel">
+                    <div class="panel-heading">
+                    </div>
+                    <div class="panel-body">
+                        <form id="edit-form" enctype="multipart/form-data">
+                            <div class="row">
+                                <div class="col-lg-6">
+
+                                    <input type="number" hidden name="institutionId" value=@ViewData["institutionId"]>
+
+                                    <div class="form-group">
+                                        <label class="control-label">Unjustifiable Expense in Percentage</label>
+                                        <input type="number" class="form-control" name="amount" placeholder="(0 to 100)"
+                                                min="0" max="100">
+                                    </div>
+                                
+                                </div>
+
+
+                               
+                            </div>
+
+                            <button type="submit" class="btn btn-primary">Submit </button>
+                        </form>
+                    </div>
+                </div>
+                <!-- END CONTACT FORM -->
+
+            </div>
+            <!--/ col-lg-6 -->
+        </div>
+
+        <!-- / row -->
+
+
+    </div>
+    <!-- END MAIN CONTENT -->
+</div>
+<!-- END MAIN -->
+<!-- EDIT MODAL -->
+
+
+@section Scripts
+    {
+
+    <script src="~/assets/vendor/data-tables/jquery.dataTables.min.js"></script>
+    <script src="~/assets/vendor/data-tables/dataTables.bootstrap.min.js"></script>
+    <script src="~/assets/vendor/data-tables/dataTables.colReorder.js"></script>
+    <script src="~/assets/vendor/data-tables/dataTables.tableTools.js"></script>
+    <script src="~/assets/vendor/toastr/toastr.min.js"></script>
+
+
+
+    <script>
+        var url = "/api/UnjustifiableExpenses/AddOrUpdateCompletionRate/" + @ViewData["institutionId"]
+        var editformId = "#edit-form"
+        var dataId = "unjustifiableExpenseId"
+        var fetchUrl = "/api/UnjustifiableExpenses/ByInstitution/" + @ViewData["institutionId"]
+
+
+
+
+    </script>
+
+    <script src="~/assets/scripts/data-crud-single.js"></script>
+}

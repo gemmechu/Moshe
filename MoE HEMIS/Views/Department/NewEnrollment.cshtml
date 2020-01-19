@@ -1,0 +1,211 @@
+﻿@Model  DepartmentNewEnrollmentViewMode;
+<partial name="SideNavView" /> 
+<div class="main"> 
+    <div class="main-content">
+        <div class="row" id="addStudentList">
+            <div class="col-md-9">
+                <h3 class="page-title">Add New Student Enrollment</h3>
+                <div class="panel">
+                    <div class="panel-heading">
+                        <h3 class="panel-title"> New Student Enrollment</h3>
+                    </div>
+                    <div class="panel-body">
+                        <form id="new-form">
+                            <div class="row">
+                                <div class="col-lg-6">
+                                    <input type="number" hidden name="departmentId" value=@Model.Department.DepartmentId>
+                                    <div class="form-group">
+                                        <label class="control-label">Study Program</label>
+                                        <select name="program" class="form-control">
+                                            <option value="0">Day Time</option>
+                                            <option value="1">Summer</option>
+                                            <option value="2">Extension</option>
+                                            <option value="3">Distance</option>
+                                        </select>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label class="control-label">Study Level</label>
+                                        <select name="level" class="form-control">
+                                            <option value="0">UNDERGRADUATE</option>
+                                            <option value="1">MASTERS</option>
+                                            <option value="2">PHD</option>
+                                            <option value="3">SPECIALIZATION</option>
+                                            <option value="4">SUB SPECIALIZATION</option>
+                                        </select>
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-6">                                   
+
+
+                                    <div class="form-group">
+                                        <label class="control-label">Female</label>
+                                        <input type="number" class="form-control" name="femals" placeholder="Female" value="0">
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="control-label">Male</label>
+                                        <input type="number" class="form-control" name="males" placeholder="Male" value="0">
+                                    </div>
+                                </div>
+                            </div>
+                            <button type="submit" class="btn btn-primary">Add New Enrollment </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr />
+        <div class="row">
+            <div class="col-lg-11">
+                <h3 class="col-cyan">New Student Enrollement List</h3>
+                <div class="panel">
+                    <div class="panel-heading">
+                    </div>
+                    <div class="panel-body">
+                        <table class="table table-sorting table-hover table-striped" id="enrollment-table">
+                            <thead>
+                                <tr>
+                                    <th>Program</th>
+                                    <th>Level</th> 
+                                    <th>Males</th>
+                                    <th>Females</th> 
+                                    <th></th>
+                                    <th></th>
+                                </tr>
+                            </thead>
+                            <tbody></tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <!-- END MAIN CONTENT -->
+</div>
+<!-- END MAIN -->
+<!-- EDIT MODAL -->
+<div id="edit-model-modal" class="modal" role="dialog">
+    <div class="modal-dialog modal-lg">
+
+        <!-- Modal content-->
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title">Edit Enrollement</h4>
+            </div>
+            <div class="modal-body">
+                <form id="edit-form">
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <input type="number" hidden name="departmentId" value=@Model.Department.DepartmentId>
+                            <input type="number" hidden name="newEnrollmentId">
+
+                            <div class="form-group">
+                                <label class="control-label">Study Program</label>
+                                <select name="program" class="form-control">
+                                    <option value="0">Day Time</option>
+                                    <option value="1">Summer</option>
+                                    <option value="2">Extension</option>
+                                    <option value="3">Distance</option>
+                                </select>
+                            </div>
+
+
+                            <div class="form-group">
+                                <label class="control-label">Study Level</label>
+                                <select name="level" class="form-control">
+                                    <option value="0">UNDERGRADUATE</option>
+                                    <option value="1">MASTERS</option>
+                                    <option value="2">PHD</option>
+                                    <option value="3">SPECIALIZATION</option>
+                                    <option value="4">SUB SPECIALIZATION</option>
+
+
+                                </select>
+                            </div>
+
+                        </div>
+                        <div class="col-lg-6">
+
+                            <div class="form-group">
+                                <label class="control-label">Female</label>
+                                <input type="number" class="form-control" name="femals" placeholder="Female"
+                                       value="0">
+                            </div>
+                            <div class="form-group">
+                                <label class="control-label">Male</label>
+                                <input type="number" class="form-control" name="males" placeholder="Male" value="0">
+                            </div>
+
+
+                        </div>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary">Update </button>
+                </form>
+            </div>
+
+        </div>
+
+    </div>
+</div>
+
+@section Scripts
+    {
+
+    <script src="~/assets/vendor/data-tables/jquery.dataTables.min.js"></script>
+    <script src="~/assets/vendor/data-tables/dataTables.bootstrap.min.js"></script>
+    <script src="~/assets/vendor/data-tables/dataTables.colReorder.js"></script>
+    <script src="~/assets/vendor/data-tables/dataTables.tableTools.js"></script>
+    <script src="~/assets/vendor/toastr/toastr.min.js"></script>
+    <script src="~/assets/scripts/Enums.js"></script>
+
+
+
+    <script>
+
+        var url = "/api/newEnrollments/"
+        var tableId = "#enrollment-table"
+        var newformId = "#new-form"
+        var editformId = "#edit-form"
+        var dataId = "newEnrollmentId"
+        var departmentId = @Model.Department.DepartmentId
+        var fetchUrl = "/api/newEnrollments/ByDepartment/" + departmentId
+
+
+        var columns = [
+            {
+                data: "program",
+                render: function (data, type, newEnrollment) {
+                    return STUDYPROGRAM[data]
+                }
+            },
+            {
+                data: "level",
+                render: function (data, type, newEnrollment) {
+                    return STUDYLEVEL[data]
+                }
+            },
+            
+            { data: "males" },
+            { data: "femals" },
+            {
+                data: dataId,
+                render: function (data, type, newEnrollment) {
+                    return '<button type="button" class="btn btn-primary btn-sm edit-data-button" data-toggle="modal" data-target="#edit-model-modal">Edit</button> '
+                }
+            },
+            {
+                data: dataId,
+                render: function (data, type, newEnrollment) {
+                     return   '<button type = "button"  class="btn btn-danger btn-sm delete-data-button" data-model-id =' + data + ' > Delete</button > '
+                }
+            }
+        ]
+
+
+    </script>
+    <script src="~/assets/scripts/data-crud.js"></script>
+}

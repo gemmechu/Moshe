@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.28803.352
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MoE HEMIS", "MoE HEMIS\MoE HEMIS.csproj", "{7F3A78BF-0EF7-4862-B7BA-3DA53F43EBF0}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7F3A78BF-0EF7-4862-B7BA-3DA53F43EBF0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7F3A78BF-0EF7-4862-B7BA-3DA53F43EBF0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7F3A78BF-0EF7-4862-B7BA-3DA53F43EBF0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7F3A78BF-0EF7-4862-B7BA-3DA53F43EBF0}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {36B0705F-A19B-441A-B823-3A35197B2D0C}
+	EndGlobalSection
+EndGlobal

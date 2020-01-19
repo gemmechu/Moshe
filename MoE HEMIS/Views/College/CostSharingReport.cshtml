@@ -1,0 +1,336 @@
+﻿@Model  CollegeViewModel
+<partial name="SideNavView" />
+<div class="main">
+    <div class="main-content">
+
+        <div class="row" id="addAcademicStaff">
+            <div class="col-md-12">
+                <h3 class="page-title">Add Cost Sharing Report</h3>
+                <div class="panel">
+                    <div class="panel-body">
+                        <form id="new-form">
+                            <div class="row">
+                                <div class="col-lg-4">
+                                    <input type="number" hidden name="departmentId" value=@Model.College.CollegeId>
+                                    <div class="form-group">
+                                        <label class="control-label" for="Name">Full Name</label>
+                                        <input name="name" id="fullName" class="form-control" type="text" placeholder="Full Name" />
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label class="control-label">Sex</label>
+                                        <select class="form-control" name="sex" id="Sex" asp-items="Html.GetEnumSelectList<MoE_HEMIS.Models.Sex>()"></select>
+                                    </div>
+
+
+                                    <div class="form-group ">
+                                        <label class="control-label">TIN</label>
+                                        <input name="tin" class="form-control" type="text" placeholder="TIN Number" />
+                                    </div>
+                                    <div class="form-group ">
+                                        <label class="control-label">Student ID</label>
+                                        <input name="studentId" id="Salary" class="form-control" type="text" />
+                                    </div>
+
+
+                                    <div class="form-group">
+                                        <label class="control-label">Registration Date</label>
+                                        <input name="registrationDate" class="form-control" type="date" />
+                                    </div>
+
+                                </div>
+
+                                <div class="col-lg-4">
+
+
+
+                                    <div class="form-group ">
+                                        <label class="control-label">Field Of Study</label>
+                                        <input name="fieldOfStudy" class="form-control" type="text" />
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label class="control-label">Clearance Date</label>
+                                        <input name="clearanceDate" class="form-control" type="date" />
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label class="control-label">Tution Fee</label>
+                                        <input name="tutionFee" class="form-control" type="number" />
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label class="control-label">Food Expense</label>
+                                        <input name="foodExpense" class="form-control" type="number" />
+                                    </div>
+
+
+
+                                </div>
+
+                                <div class="col-lg-4">
+
+                                    <div class="form-group">
+                                        <label class="control-label">Dormitory Expense</label>
+                                        <input name="dormitoryExpense" class="form-control" type="number" />
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label class="control-label">Pre-Payment Amount</label>
+                                        <input name="prePayment" class="form-control" type="number" />
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label class="control-label">Unpaid Amount</label>
+                                        <input name="unpaid" class="form-control" type="number" />
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label class="control-label">Recipt Number</label>
+                                        <input name="reciptNumber" class="form-control" type="text" />
+                                    </div>
+
+                                </div>
+
+
+
+
+
+                            </div>
+                            <div class="form-group">
+                                <button type="submit" class="btn btn-primary">Submit </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <hr />
+        <div class="row" id="addAcademicStaff">
+            <div class="col-md-12">
+                <h3 class="page-title">Upload Cost Sharing Report </h3>
+                <div class="panel">
+                    <div class="panel-body">
+                        <div class="row">
+                            <form asp-controller="api/CostSharingReports" asp-action="UploadFile" class="dropzone"></form>
+                        </div>
+                        @if(ViewData["file"] != null){
+                        <div class="row">
+                            <a class="" href=@ViewData["file"] >Download File</a>
+                        </div>
+                        }
+                    </div>
+                </div>
+            </div>
+        <hr />
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="panel">
+                    <div class="panel-heading">
+                        <h3 class="page-title">Cost Sharing Report List</h3>
+                    </div>
+                    <div class="panel-body table-responsive-lg">
+                        <table class="table table-sorting table-hover table-striped " id="academic-staff-table">
+                            <thead>
+                                <tr>
+                                    <th>Full name</th>
+                                    <th>Sex</th>
+                                    <th>TIN</th>
+                                    <th>ID</th>
+                                    <th>Registration Date</th>
+                                    <th>Field Of Study</th>
+                                    <th>Clearance Date</th>
+                                    <th>Tution Fee</th>
+                                    <th>Food Expense</th>
+                                    <th>Dormitory Expense</th>
+                                    <th>Pre Payment</th>
+                                    <th>Unpaid</th>
+                                    <th>Recipt Number</th>
+                                    <th></th>
+                                    <th></th>
+                                </tr>
+                            </thead>
+                            <tbody></tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="edit-model-modal" class="modal" role="dialog">
+    <div class="modal-dialog modal-lg">
+
+        <!-- Modal content-->
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title">Edit Cost Sharing Report</h4>
+            </div>
+            <div class="modal-body">
+                <form id="edit-form">
+                    <div class="row">
+                        <div class="col-lg-4">
+                            <input type="number" hidden name="departmentId" value=@Model.College.CollegeId>
+                            <div class="form-group">
+                                <label class="control-label" for="Name">Full Name</label>
+                                <input name="name" id="fullName" class="form-control" type="text" placeholder="Full Name" />
+                                <input name="costSharingReportsId" type="text" hidden />
+                            </div>
+
+                            <div class="form-group">
+                                <label class="control-label">Sex</label>
+                                <select class="form-control" name="sex" id="Sex" asp-items="Html.GetEnumSelectList<MoE_HEMIS.Models.Sex>()"></select>
+                            </div>
+
+
+                            <div class="form-group ">
+                                <label class="control-label">TIN</label>
+                                <input name="tin" class="form-control" type="text" placeholder="TIN Number" />
+                            </div>
+                            <div class="form-group ">
+                                <label class="control-label">Student ID</label>
+                                <input name="studentId" id="Salary" class="form-control" type="text" />
+                            </div>
+
+
+                            <div class="form-group">
+                                <label class="control-label">Registration Date</label>
+                                <input name="registrationDate" class="form-control" type="date" />
+                            </div>
+
+                        </div>
+
+                        <div class="col-lg-4">
+
+
+
+                            <div class="form-group ">
+                                <label class="control-label">Field Of Study</label>
+                                <input name="fieldOfStudy" class="form-control" type="text" />
+                            </div>
+
+                            <div class="form-group">
+                                <label class="control-label">Clearance Date</label>
+                                <input name="clearanceDate" class="form-control" type="date" />
+                            </div>
+
+                            <div class="form-group">
+                                <label class="control-label">Tution Fee</label>
+                                <input name="tutionFee" class="form-control" type="number" />
+                            </div>
+
+                            <div class="form-group">
+                                <label class="control-label">Food Expense</label>
+                                <input name="foodExpense" class="form-control" type="number" />
+                            </div>
+
+
+
+                        </div>
+
+                        <div class="col-lg-4">
+
+                            <div class="form-group">
+                                <label class="control-label">Dormitory Expense</label>
+                                <input name="dormitoryExpense" class="form-control" type="number" />
+                            </div>
+
+                            <div class="form-group">
+                                <label class="control-label">Pre-Payment Amount</label>
+                                <input name="prePayment" class="form-control" type="number" />
+                            </div>
+
+                            <div class="form-group">
+                                <label class="control-label">Unpaid Amount</label>
+                                <input name="unpaid" class="form-control" type="number" />
+                            </div>
+
+                            <div class="form-group">
+                                <label class="control-label">Recipt Number</label>
+                                <input name="reciptNumber" class="form-control" type="text" />
+                            </div>
+
+                        </div>
+
+
+
+
+
+                    </div>
+                    <div class="form-group">
+                        <button type="submit" class="btn btn-primary">Submit </button>
+                    </div>
+
+
+                </form>
+            </div>
+
+        </div>
+
+    </div>
+</div>
+
+<!-- END MAIN -->
+@section Scripts
+    {
+
+
+    <script src="~/assets/vendor/data-tables/jquery.dataTables.min.js"></script>
+    <script src="~/assets/vendor/data-tables/dataTables.bootstrap.min.js"></script>
+    <script src="~/assets/vendor/data-tables/dataTables.colReorder.js"></script>
+    <script src="~/assets/vendor/data-tables/dataTables.tableTools.js"></script>
+    <script src="~/assets/vendor/toastr/toastr.min.js"></script>
+    <script src="~/assets/scripts/Enums.js"></script>
+    <script src="~/assets/scripts/dropzone.js"></script>
+
+
+
+    <script>
+
+
+    var url = "/api/CostSharingReports"
+        var tableId = "#academic-staff-table"
+        var newformId = "#new-form"
+        var editformId = "#edit-form"
+        var dataId = "costSharingReportsId"
+        var collegeId = @Model.College.CollegeId
+        var fetchUrl = "/api/CostSharingReports/ByCollege/" + collegeId
+
+        var columns = [
+            { data: "fullName" },
+            {
+                data: "sex",
+                render: function (data, type, cost) {
+                    return SEX[data]
+                }
+            },
+            { data: "tin" },
+            { data: "studentId" },
+            { data: "registrationDate" },
+            { data: "fieldOfStudy" },
+            { data: "clearanceDate" },
+            { data: "tutionFee" },
+            { data: "foodExpense" },
+            { data: "dormitoryExpense" },
+            { data: "prePayment" },
+            { data: "unpaid" },
+            { data: "reciptNumber" },
+            {
+                data: dataId,
+                render: function (data, type, academicStaff) {
+                    return '<button type="button" class="btn btn-primary btn-sm edit-data-button" data-toggle="modal" data-target="#edit-model-modal">Edit</button> '
+                }
+            },
+            {
+                data: dataId,
+                render: function (data, type, academicStaff) {
+                    return '<button type = "button"  class="btn btn-danger btn-sm delete-data-button" data-model-id =' + data + ' > Delete</button > '
+                }
+            }
+        ]
+
+    </script>
+    <script src="~/assets/scripts/data-crud.js"></script>
+}

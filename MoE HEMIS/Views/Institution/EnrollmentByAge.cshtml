@@ -1,0 +1,186 @@
+﻿@Model  Institution
+<partial name="SidNavView" />
+
+<!-- MAIN -->
+<div class="main">
+    <!-- MAIN CONTENT -->
+    <div class="main-content">
+        <!-- row -->
+        <div class="row">
+            <div class="col-lg-11">
+                <a href="#addManagementData" class="btn btn-primary">Add Enrollment By Age</a>
+                <h3 class="col-cyan">Enrollment By Age List</h3>
+                <div class="panel">
+                    <div class="panel-heading">
+                    </div>
+                    <div class="panel-body">
+                        <table class="table table-sorting table-hover table-striped" id="enrollment-table">
+                            <thead>
+                                <tr>
+                                    <th>Age Range</th>
+                                    <th>males</th>
+                                    <th>females</th>
+
+                                    <th></th>
+                                </tr>
+                            </thead>
+                            <tbody></tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- / row -->
+        <hr>
+        <!-- row -->
+        <div class="row" id="addManagementData">
+            <div class="col-md-9">
+                <h3 class="page-title">Add Enrollment By Age</h3>
+                <!-- CONTACT FORM -->
+                <div class="panel">
+                    <div class="panel-heading">
+                        <h3 class="panel-title"> Enrollment By Age</h3>
+                    </div>
+                    <div class="panel-body">
+                        <form id="new-form" enctype="multipart/form-data">
+                            <div class="row">
+                                <div class="col-lg-6">
+                                    <input type="number" hidden name="institutionId" value=@Model.InstitutionId>
+
+
+                                    <div class="form-group">
+                                        <label class="control-label">Males</label>
+                                        <input type="number" class="form-control" name="males" placeholder="Males" value="0" min="0">
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="control-label">Females </label>
+                                        <input type="number" class="form-control" name="females" placeholder="Females " value="0" min="0">
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="control-label">Age Range</label>
+
+                                        <select name="ageRange" class="form-control">
+
+                                            <option value="0">&lt; 18</option>
+                                            <option value="1"> 18</option>
+                                            <option value="2">19</option>
+                                            <option value="3">20</option>
+                                            <option value="4">21</option>
+                                            <option value="5">22</option>
+                                            <option value="6">23</option>
+                                            <option value="7">24</option>
+                                            <option value="8">25</option>
+                                            <option value="9">26</option>
+                                            <option value="10">&gt; 26</option>
+                                        </select>
+                                    </div>
+
+
+                                </div>
+
+                            </div>
+                            <button type="submit" class="btn btn-primary">Add </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="edit-model-modal" class="modal" role="dialog">
+    <div class="modal-dialog modal-lg">
+
+        <!-- Modal content-->
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title">Edit Building Data</h4>
+            </div>
+            <div class="modal-body">
+                <form id="edit-form">
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <input type="number" hidden name="institutionId" value=@Model.InstitutionId>
+                            <input type="number" hidden name="enrollmentByAgeId">
+
+
+                            <div class="form-group">
+                                <label class="control-label">Males</label>
+                                <input type="number" class="form-control" name="males" placeholder="Males" value="0" min="0">
+                            </div>
+                            <div class="form-group">
+                                <label class="control-label">Females </label>
+                                <input type="number" class="form-control" name="females" placeholder="Females " value="0" min="0">
+                            </div>
+                            <div class="form-group">
+                                <label class="control-label">Age Range</label>
+
+                                <select name="ageRange" class="form-control">
+                                    <option value="0">&lt; 18</option>
+                                    <option value="1"> 18</option>
+                                    <option value="2">19</option>
+                                    <option value="3">20</option>
+                                    <option value="4">21</option>
+                                    <option value="5">22</option>
+                                    <option value="6">23</option>
+                                    <option value="7">24</option>
+                                    <option value="8">25</option>
+                                    <option value="9">26</option>
+                                    <option value="10">&gt; 26</option>
+                                </select>
+                            </div>
+
+
+                        </div>
+
+                    </div>
+                    <button type="submit" class="btn btn-primary">Update </button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts
+    {
+
+    <script src="~/assets/vendor/data-tables/jquery.dataTables.min.js"></script>
+    <script src="~/assets/vendor/data-tables/dataTables.bootstrap.min.js"></script>
+    <script src="~/assets/vendor/data-tables/dataTables.colReorder.js"></script>
+    <script src="~/assets/vendor/data-tables/dataTables.tableTools.js"></script>
+    <script src="~/assets/vendor/toastr/toastr.min.js"></script>
+    <script src="~/assets/scripts/Enums.js"></script>
+
+    <script>
+        var institutionId = @Model.InstitutionId
+
+        var fetchUrl = "/api/EnrollmentByAges/ByInstitution/"+ institutionId
+        var url ="/api/EnrollmentByAges"
+        var tableId = "#enrollment-table"
+        var newformId = "#new-form"
+        var editformId = "#edit-form"
+        var dataId = "enrollmentByAgeId"
+
+        var selectedrow;
+
+        var columns = [
+            {
+                data: "ageRange",
+                render: function (data, type, buildingData) {
+                    return ENROLLMENTBYAGE[data]
+                }
+            },
+            { data: "males" },
+            { data: "females" },
+             {
+                data: dataId,
+                render: function (data, type, buildingData) {
+                    return '<button type="button" class="btn btn-primary btn-sm edit-data-button" data-toggle="modal" data-target="#edit-model-modal">Edit</button>         ' +
+                        '<button type = "button"  class="btn btn-danger btn-sm delete-data-button" data-model-id =' + data + ' > Delete</button > '
+                }
+            }
+
+        ]
+    </script>
+    <script src="~/assets/scripts/data-crud.js"></script>
+}

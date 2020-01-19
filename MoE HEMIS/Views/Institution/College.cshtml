@@ -1,0 +1,201 @@
+﻿
+<partial name="SidNavView" />
+<!-- MAIN -->
+<div class="main">
+    <!-- MAIN CONTENT -->
+    <div class="main-content">
+
+
+        <!-- row -->
+        <div class="row" id="addCollege">
+            <div class="col-md-9">
+                <h3 class="page-title">Add College / School</h3>
+                <!-- CONTACT FORM -->
+                <div class="panel">
+                    <div class="panel-heading">
+                        <h3 class="panel-title">Add College / School</h3>
+                    </div>
+                    <div class="panel-body">
+                        <form id="new-form" enctype="multipart/form-data">
+                            <div class="row">
+                                <div class="col-lg-6">
+                                    <div class="form-group">
+                                        <label>Associated Band</label>
+                                        <select class="form-control" name="band">
+                                            @{
+                                                var bandViewData = ViewData["bands"];
+                                                if (bandViewData != null)
+                                                {
+                                                    List<Band> bands = (List<Band>)bandViewData;
+                                                    if (bands.Count > 0)
+                                                    {
+                                                        foreach (Band band in bands)
+                                                        {
+                                                <option value="@(band.BandId)">@(band.BandName)</option>
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        </select>
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="text" class="form-control" required="" name="name" placeholder="College Name" />
+                                        <input type="text" name="institutionId" value=@ViewData["institutionId"] hidden />
+                                    </div>
+                                    <div class="form-group">
+                                        <label>Associated User</label>
+                                        <select class="form-control" name="username">
+                                            @{
+                                                var usersViewData = ViewData["users"];
+                                                if (usersViewData != null)
+                                                {
+                                                    List<ApplicationUser> users = (List<ApplicationUser>)usersViewData;
+                                                    if (users.Count > 0)
+                                                    {
+                                                        foreach (ApplicationUser applicationUser in users)
+                                                        {
+                                                <option value="@(applicationUser.UserName)">@(applicationUser.UserName)</option>
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        </select>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <button type="submit" class="btn btn-primary">Submit </button>
+                        </form>
+                    </div>
+                </div>
+                <!-- END CONTACT FORM -->
+
+            </div>
+            <!--/ col-lg-6 -->
+        </div>
+
+        <!-- / row -->
+        <!-- row -->
+        <div class="row">
+            <div class="col-lg-9">
+                <h3 class="page-title">College / School List</h3>
+                <div class="panel">
+                    <div class="panel-heading">
+                        <h3 class="panel-title">College List</h3>
+                    </div>
+                    <div class="panel-body">
+                        <table class="table table-sorting table-hover table-striped" id="college-table">
+                            <thead>
+                                <tr>
+                                    <th>College Name</th>
+                                    <th></th>
+                                    <th></th>
+
+                                </tr>
+                            </thead>
+                            <tbody></tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- / row -->
+
+    </div>
+    <!-- END MAIN CONTENT -->
+</div>
+<!-- END MAIN -->
+<!-- Modal -->
+<div id="edit-model-modal" class="modal" role="dialog">
+    <div class="modal-dialog modal-lg">
+
+        <!-- Modal content-->
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title">Edit College / School</h4>
+            </div>
+            <div class="modal-body">
+                <form id="edit-form">
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <div class="form-group">
+                                <label>Associated Band</label>
+                                <select class="form-control" name="bandId">
+                                    @{
+
+                                        if (ViewData["bands"] != null)
+                                        {
+                                            List<Band> bands = (List<Band>)ViewData["bands"];
+                                            if (bands.Count > 0)
+                                            {
+                                                foreach (Band band in bands)
+                                                {
+                                        <option value="@(band.BandId)">@(band.BandName)</option>
+                                                }
+                                            }
+                                        }
+                                    }
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <input type="text" class="form-control" required="" name="name" placeholder="College Name" />
+                                <input type="text" name="institutionId" value=@ViewData["institutionId"] hidden />
+                                <input type="text" name="collegeId" hidden />
+                            </div>
+                            
+                        </div>
+
+                    </div>
+
+                    <button type="submit" class="btn btn-primary">Update </button>
+                </form>
+            </div>
+
+        </div>
+
+    </div>
+</div>
+
+@section Scripts
+    {
+
+    <script src="~/assets/vendor/data-tables/jquery.dataTables.min.js"></script>
+    <script src="~/assets/vendor/data-tables/dataTables.bootstrap.min.js"></script>
+    <script src="~/assets/vendor/data-tables/dataTables.colReorder.js"></script>
+    <script src="~/assets/vendor/data-tables/dataTables.tableTools.js"></script>
+    <script src="~/assets/vendor/toastr/toastr.min.js"></script>
+
+
+
+    <script>
+        var url = "/api/colleges"
+        var fetchUrl = "/api/colleges/ByInstitution/" + @ViewData["institutionId"]
+        var tableId = "#college-table"
+        var newformId = "#new-form"
+        var editformId = "#edit-form"
+         dataId = "collegeId"
+
+        var selectedrow;
+
+        var columns = [
+            { data: "name" },
+            {
+                data:dataId,
+                render: function (data, type, college) {
+                    return '<button type="button" class="btn btn-primary btn-sm edit-data-button" data-toggle="modal" data-target="#edit-model-modal">Edit</button> '
+                }
+            },
+            {
+                data:dataId,
+                render: function (data, type, college) {
+                    return '<button type = "button"  class="btn btn-danger btn-sm delete-data-button" data-model-id =' + data + ' > Delete</button > '
+                }
+            }
+        ]
+
+    </script>
+    <script src="~/assets/scripts/data-crud.js"></script>
+
+}

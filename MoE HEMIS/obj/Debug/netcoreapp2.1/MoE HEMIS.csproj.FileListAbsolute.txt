@@ -1,0 +1,323 @@
+C:\Users\user\Desktop\POSSampl\moe-hemis-back-end\MoE HEMIS\bin\Debug\netcoreapp2.1\MoE HEMIS.deps.json
+C:\Users\user\Desktop\POSSampl\moe-hemis-back-end\MoE HEMIS\bin\Debug\netcoreapp2.1\MoE HEMIS.runtimeconfig.json
+C:\Users\user\Desktop\POSSampl\moe-hemis-back-end\MoE HEMIS\bin\Debug\netcoreapp2.1\MoE HEMIS.runtimeconfig.dev.json
+C:\Users\user\Desktop\POSSampl\moe-hemis-back-end\MoE HEMIS\bin\Debug\netcoreapp2.1\MoE HEMIS.dll
+C:\Users\user\Desktop\POSSampl\moe-hemis-back-end\MoE HEMIS\bin\Debug\netcoreapp2.1\MoE HEMIS.pdb
+C:\Users\user\Desktop\POSSampl\moe-hemis-back-end\MoE HEMIS\bin\Debug\netcoreapp2.1\MoE HEMIS.Views.dll
+C:\Users\user\Desktop\POSSampl\moe-hemis-back-end\MoE HEMIS\bin\Debug\netcoreapp2.1\MoE HEMIS.Views.pdb
+C:\Users\user\Desktop\POSSampl\moe-hemis-back-end\MoE HEMIS\obj\Debug\netcoreapp2.1\MoE HEMIS.csprojAssemblyReference.cache
+C:\Users\user\Desktop\POSSampl\moe-hemis-back-end\MoE HEMIS\obj\Debug\netcoreapp2.1\MoE HEMIS.csproj.CoreCompileInputs.cache
+C:\Users\user\Desktop\POSSampl\moe-hemis-back-end\MoE HEMIS\obj\Debug\netcoreapp2.1\MoE HEMIS.RazorAssemblyInfo.cache
+C:\Users\user\Desktop\POSSampl\moe-hemis-back-end\MoE HEMIS\obj\Debug\netcoreapp2.1\MoE HEMIS.RazorAssemblyInfo.cs
+C:\Users\user\Desktop\POSSampl\moe-hemis-back-end\MoE HEMIS\obj\Debug\netcoreapp2.1\UserSecretsAssemblyInfo.cs
+C:\Users\user\Desktop\POSSampl\moe-hemis-back-end\MoE HEMIS\obj\Debug\netcoreapp2.1\MoE HEMIS.AssemblyInfoInputs.cache
+C:\Users\user\Desktop\POSSampl\moe-hemis-back-end\MoE HEMIS\obj\Debug\netcoreapp2.1\MoE HEMIS.AssemblyInfo.cs
+C:\Users\user\Desktop\POSSampl\moe-hemis-back-end\MoE HEMIS\obj\Debug\netcoreapp2.1\MoE HEMIS.TagHelpers.input.cache
+C:\Users\user\Desktop\POSSampl\moe-hemis-back-end\MoE HEMIS\obj\Debug\netcoreapp2.1\MoE HEMIS.TagHelpers.output.cache
+C:\Users\user\Desktop\POSSampl\moe-hemis-back-end\MoE HEMIS\obj\Debug\netcoreapp2.1\MoE HEMIS.RazorCoreGenerate.cache
+C:\Users\user\Desktop\POSSampl\moe-hemis-back-end\MoE HEMIS\obj\Debug\netcoreapp2.1\Razor\Areas\Identity\Pages\Account\AccessDenied.g.cshtml.cs
+C:\Users\user\Desktop\POSSampl\moe-hemis-back-end\MoE HEMIS\obj\Debug\netcoreapp2.1\Razor\Areas\Identity\Pages\Account\AddDepartment.g.cshtml.cs
+C:\Users\user\Desktop\POSSampl\moe-hemis-back-end\MoE HEMIS\obj\Debug\netcoreapp2.1\Razor\Areas\Identity\Pages\Account\AddUser.g.cshtml.cs
+C:\Users\user\Desktop\POSSampl\moe-hemis-back-end\MoE HEMIS\obj\Debug\netcoreapp2.1\Razor\Areas\Identity\Pages\Account\Login.g.cshtml.cs
+C:\Users\user\Desktop\POSSampl\moe-hemis-back-end\MoE HEMIS\obj\Debug\netcoreapp2.1\Razor\Areas\Identity\Pages\Account\Logout.g.cshtml.cs
+C:\Users\user\Desktop\POSSampl\moe-hemis-back-end\MoE HEMIS\obj\Debug\netcoreapp2.1\Razor\Areas\Identity\Pages\Account\Manage\ChangePassword.g.cshtml.cs
+C:\Users\user\Desktop\POSSampl\moe-hemis-back-end\MoE HEMIS\obj\Debug\netcoreapp2.1\Razor\Areas\Identity\Pages\Account\Manage\Index.g.cshtml.cs
+C:\Users\user\Desktop\POSSampl\moe-hemis-back-end\MoE HEMIS\obj\Debug\netcoreapp2.1\Razor\Areas\Identity\Pages\Account\Manage\_Layout.g.cshtml.cs
+C:\Users\user\Desktop\POSSampl\moe-hemis-back-end\MoE HEMIS\obj\Debug\netcoreapp2.1\Razor\Areas\Identity\Pages\Account\Manage\_ManageNav.g.cshtml.cs
+C:\Users\user\Desktop\POSSampl\moe-hemis-back-end\MoE HEMIS\obj\Debug\netcoreapp2.1\Razor\Areas\Identity\Pages\Account\Manage\_StatusMessage.g.cshtml.cs
+C:\Users\user\Desktop\POSSampl\moe-hemis-back-end\MoE HEMIS\obj\Debug\netcoreapp2.1\Razor\Areas\Identity\Pages\Account\Manage\_ViewImports.g.cshtml.cs
+C:\Users\user\Desktop\POSSampl\moe-hemis-back-end\MoE HEMIS\obj\Debug\netcoreapp2.1\Razor\Areas\Identity\Pages\Account\Register.g.cshtml.cs
+C:\Users\user\Desktop\POSSampl\moe-hemis-back-end\MoE HEMIS\obj\Debug\netcoreapp2.1\Razor\Areas\Identity\Pages\Account\_ViewImports.g.cshtml.cs
+C:\Users\user\Desktop\POSSampl\moe-hemis-back-end\MoE HEMIS\obj\Debug\netcoreapp2.1\Razor\Areas\Identity\Pages\Error.g.cshtml.cs
+C:\Users\user\Desktop\POSSampl\moe-hemis-back-end\MoE HEMIS\obj\Debug\netcoreapp2.1\Razor\Areas\Identity\Pages\_ValidationScriptsPartial.g.cshtml.cs
+C:\Users\user\Desktop\POSSampl\moe-hemis-back-end\MoE HEMIS\obj\Debug\netcoreapp2.1\Razor\Areas\Identity\Pages\_ViewImports.g.cshtml.cs
+C:\Users\user\Desktop\POSSampl\moe-hemis-back-end\MoE HEMIS\obj\Debug\netcoreapp2.1\Razor\Areas\Identity\Pages\_ViewStart.g.cshtml.cs
+C:\Users\user\Desktop\POSSampl\moe-hemis-back-end\MoE HEMIS\obj\Debug\netcoreapp2.1\Razor\Views\College\CompletionRates.g.cshtml.cs
+C:\Users\user\Desktop\POSSampl\moe-hemis-back-end\MoE HEMIS\obj\Debug\netcoreapp2.1\Razor\Views\College\Department.g.cshtml.cs
+C:\Users\user\Desktop\POSSampl\moe-hemis-back-end\MoE HEMIS\obj\Debug\netcoreapp2.1\Razor\Views\College\Index.g.cshtml.cs
+C:\Users\user\Desktop\POSSampl\moe-hemis-back-end\MoE HEMIS\obj\Debug\netcoreapp2.1\Razor\Views\College\Internships.g.cshtml.cs
+C:\Users\user\Desktop\POSSampl\moe-hemis-back-end\MoE HEMIS\obj\Debug\netcoreapp2.1\Razor\Views\College\ResearchPapers.g.cshtml.cs
+C:\Users\user\Desktop\POSSampl\moe-hemis-back-end\MoE HEMIS\obj\Debug\netcoreapp2.1\Razor\Views\College\SideNavView.g.cshtml.cs
+C:\Users\user\Desktop\POSSampl\moe-hemis-back-end\MoE HEMIS\obj\Debug\netcoreapp2.1\Razor\Views\College\StaffPrograms.g.cshtml.cs
+C:\Users\user\Desktop\POSSampl\moe-hemis-back-end\MoE HEMIS\obj\Debug\netcoreapp2.1\Razor\Views\College\StaffTrainings.g.cshtml.cs
+C:\Users\user\Desktop\POSSampl\moe-hemis-back-end\MoE HEMIS\obj\Debug\netcoreapp2.1\Razor\Views\College\StudentAttritions.g.cshtml.cs
+C:\Users\user\Desktop\POSSampl\moe-hemis-back-end\MoE HEMIS\obj\Debug\netcoreapp2.1\Razor\Views\College\TechnicalStaff.g.cshtml.cs
+C:\Users\user\Desktop\POSSampl\moe-hemis-back-end\MoE HEMIS\obj\Debug\netcoreapp2.1\Razor\Views\Department\AcademicStaffByRank.g.cshtml.cs
+C:\Users\user\Desktop\POSSampl\moe-hemis-back-end\MoE HEMIS\obj\Debug\netcoreapp2.1\Razor\Views\Department\AcademicStaffStudyLeave.g.cshtml.cs
+C:\Users\user\Desktop\POSSampl\moe-hemis-back-end\MoE HEMIS\obj\Debug\netcoreapp2.1\Razor\Views\Department\AcademicStaffUpgrading.g.cshtml.cs
+C:\Users\user\Desktop\POSSampl\moe-hemis-back-end\MoE HEMIS\obj\Debug\netcoreapp2.1\Razor\Views\Department\Enrollment.g.cshtml.cs
+C:\Users\user\Desktop\POSSampl\moe-hemis-back-end\MoE HEMIS\obj\Debug\netcoreapp2.1\Razor\Views\Department\Expatriate.g.cshtml.cs
+C:\Users\user\Desktop\POSSampl\moe-hemis-back-end\MoE HEMIS\obj\Debug\netcoreapp2.1\Razor\Views\Department\ExpatriateByRank.g.cshtml.cs
+C:\Users\user\Desktop\POSSampl\moe-hemis-back-end\MoE HEMIS\obj\Debug\netcoreapp2.1\Razor\Views\Department\ForeignerStudent.g.cshtml.cs
+C:\Users\user\Desktop\POSSampl\moe-hemis-back-end\MoE HEMIS\obj\Debug\netcoreapp2.1\Razor\Views\Department\Graduates.g.cshtml.cs
+C:\Users\user\Desktop\POSSampl\moe-hemis-back-end\MoE HEMIS\obj\Debug\netcoreapp2.1\Razor\Views\Department\Index.g.cshtml.cs
+C:\Users\user\Desktop\POSSampl\moe-hemis-back-end\MoE HEMIS\obj\Debug\netcoreapp2.1\Razor\Views\Department\NewEnrollment.g.cshtml.cs
+C:\Users\user\Desktop\POSSampl\moe-hemis-back-end\MoE HEMIS\obj\Debug\netcoreapp2.1\Razor\Views\Department\ProspectiveGraduate.g.cshtml.cs
+C:\Users\user\Desktop\POSSampl\moe-hemis-back-end\MoE HEMIS\obj\Debug\netcoreapp2.1\Razor\Views\Department\SideNavView.g.cshtml.cs
+C:\Users\user\Desktop\POSSampl\moe-hemis-back-end\MoE HEMIS\obj\Debug\netcoreapp2.1\Razor\Views\Department\StaffPrograms.g.cshtml.cs
+C:\Users\user\Desktop\POSSampl\moe-hemis-back-end\MoE HEMIS\obj\Debug\netcoreapp2.1\Razor\Views\Department\StaffTrainings.g.cshtml.cs
+C:\Users\user\Desktop\POSSampl\moe-hemis-back-end\MoE HEMIS\obj\Debug\netcoreapp2.1\Razor\Views\Department\TeachingStaffByLevel.g.cshtml.cs
+C:\Users\user\Desktop\POSSampl\moe-hemis-back-end\MoE HEMIS\obj\Debug\netcoreapp2.1\Razor\Views\Home\Contact.g.cshtml.cs
+C:\Users\user\Desktop\POSSampl\moe-hemis-back-end\MoE HEMIS\obj\Debug\netcoreapp2.1\Razor\Views\Home\Index.g.cshtml.cs
+C:\Users\user\Desktop\POSSampl\moe-hemis-back-end\MoE HEMIS\obj\Debug\netcoreapp2.1\Razor\Views\Home\Privacy.g.cshtml.cs
+C:\Users\user\Desktop\POSSampl\moe-hemis-back-end\MoE HEMIS\obj\Debug\netcoreapp2.1\Razor\Views\Home\StudentReport.g.cshtml.cs
+C:\Users\user\Desktop\POSSampl\moe-hemis-back-end\MoE HEMIS\obj\Debug\netcoreapp2.1\Razor\Views\Institution\AdministrativeAndSupportiveStaff.g.cshtml.cs
+C:\Users\user\Desktop\POSSampl\moe-hemis-back-end\MoE HEMIS\obj\Debug\netcoreapp2.1\Razor\Views\Institution\Band.g.cshtml.cs
+C:\Users\user\Desktop\POSSampl\moe-hemis-back-end\MoE HEMIS\obj\Debug\netcoreapp2.1\Razor\Views\Institution\Buildings.g.cshtml.cs
+C:\Users\user\Desktop\POSSampl\moe-hemis-back-end\MoE HEMIS\obj\Debug\netcoreapp2.1\Razor\Views\Institution\EmergingRegionEnrollment.g.cshtml.cs
+C:\Users\user\Desktop\POSSampl\moe-hemis-back-end\MoE HEMIS\obj\Debug\netcoreapp2.1\Razor\Views\Institution\EnrollmentByAge.g.cshtml.cs
+C:\Users\user\Desktop\POSSampl\moe-hemis-back-end\MoE HEMIS\obj\Debug\netcoreapp2.1\Razor\Views\Institution\Index.g.cshtml.cs
+C:\Users\user\Desktop\POSSampl\moe-hemis-back-end\MoE HEMIS\obj\Debug\netcoreapp2.1\Razor\Views\Institution\ManagementDatas.g.cshtml.cs
+C:\Users\user\Desktop\POSSampl\moe-hemis-back-end\MoE HEMIS\obj\Debug\netcoreapp2.1\Razor\Views\Institution\PastoralRegionEnrollment.g.cshtml.cs
+C:\Users\user\Desktop\POSSampl\moe-hemis-back-end\MoE HEMIS\obj\Debug\netcoreapp2.1\Razor\Views\Institution\SidNavView.g.cshtml.cs
+C:\Users\user\Desktop\POSSampl\moe-hemis-back-end\MoE HEMIS\obj\Debug\netcoreapp2.1\Razor\Views\Institution\UgReport.g.cshtml.cs
+C:\Users\user\Desktop\POSSampl\moe-hemis-back-end\MoE HEMIS\obj\Debug\netcoreapp2.1\Razor\Views\MainAdmin\Band.g.cshtml.cs
+C:\Users\user\Desktop\POSSampl\moe-hemis-back-end\MoE HEMIS\obj\Debug\netcoreapp2.1\Razor\Views\MainAdmin\Departments.g.cshtml.cs
+C:\Users\user\Desktop\POSSampl\moe-hemis-back-end\MoE HEMIS\obj\Debug\netcoreapp2.1\Razor\Views\MainAdmin\Index.g.cshtml.cs
+C:\Users\user\Desktop\POSSampl\moe-hemis-back-end\MoE HEMIS\obj\Debug\netcoreapp2.1\Razor\Views\MainAdmin\Institutions.g.cshtml.cs
+C:\Users\user\Desktop\POSSampl\moe-hemis-back-end\MoE HEMIS\obj\Debug\netcoreapp2.1\Razor\Views\Shared\Error.g.cshtml.cs
+C:\Users\user\Desktop\POSSampl\moe-hemis-back-end\MoE HEMIS\obj\Debug\netcoreapp2.1\Razor\Views\Shared\_CookieConsentPartial.g.cshtml.cs
+C:\Users\user\Desktop\POSSampl\moe-hemis-back-end\MoE HEMIS\obj\Debug\netcoreapp2.1\Razor\Views\Shared\_Layout.g.cshtml.cs
+C:\Users\user\Desktop\POSSampl\moe-hemis-back-end\MoE HEMIS\obj\Debug\netcoreapp2.1\Razor\Views\Shared\_login.g.cshtml.cs
+C:\Users\user\Desktop\POSSampl\moe-hemis-back-end\MoE HEMIS\obj\Debug\netcoreapp2.1\Razor\Views\Shared\_LoginPartial.g.cshtml.cs
+C:\Users\user\Desktop\POSSampl\moe-hemis-back-end\MoE HEMIS\obj\Debug\netcoreapp2.1\Razor\Views\Shared\_ValidationScriptsPartial.g.cshtml.cs
+C:\Users\user\Desktop\POSSampl\moe-hemis-back-end\MoE HEMIS\obj\Debug\netcoreapp2.1\Razor\Views\_ViewImports.g.cshtml.cs
+C:\Users\user\Desktop\POSSampl\moe-hemis-back-end\MoE HEMIS\obj\Debug\netcoreapp2.1\Razor\Views\_ViewStart.g.cshtml.cs
+C:\Users\user\Desktop\POSSampl\moe-hemis-back-end\MoE HEMIS\obj\Debug\netcoreapp2.1\MoE HEMIS.RazorTargetAssemblyInfo.cache
+C:\Users\user\Desktop\POSSampl\moe-hemis-back-end\MoE HEMIS\obj\Debug\netcoreapp2.1\MoE HEMIS.RazorTargetAssemblyInfo.cs
+C:\Users\user\Desktop\POSSampl\moe-hemis-back-end\MoE HEMIS\obj\Debug\netcoreapp2.1\MoE HEMIS.Views.pdb
+C:\Users\user\Desktop\POSSampl\moe-hemis-back-end\MoE HEMIS\obj\Debug\netcoreapp2.1\MoE HEMIS.dll
+C:\Users\user\Desktop\POSSampl\moe-hemis-back-end\MoE HEMIS\obj\Debug\netcoreapp2.1\MoE HEMIS.pdb
+C:\Users\user\Desktop\POSSampl\moe-hemis-back-end\MoE HEMIS\obj\Debug\netcoreapp2.1\MoE HEMIS.csproj.CopyComplete
+C:\Users\user\Desktop\moe-hemis-back-end\MoE HEMIS\obj\Debug\netcoreapp2.1\MoE HEMIS.csproj.CoreCompileInputs.cache
+C:\Users\user\Desktop\moe-hemis-back-end\MoE HEMIS\obj\Debug\netcoreapp2.1\MoE HEMIS.RazorAssemblyInfo.cache
+C:\Users\user\Desktop\moe-hemis-back-end\MoE HEMIS\obj\Debug\netcoreapp2.1\MoE HEMIS.RazorAssemblyInfo.cs
+C:\Users\user\Desktop\moe-hemis-back-end\MoE HEMIS\obj\Debug\netcoreapp2.1\UserSecretsAssemblyInfo.cs
+C:\Users\user\Desktop\moe-hemis-back-end\MoE HEMIS\obj\Debug\netcoreapp2.1\MoE HEMIS.AssemblyInfoInputs.cache
+C:\Users\user\Desktop\moe-hemis-back-end\MoE HEMIS\obj\Debug\netcoreapp2.1\MoE HEMIS.AssemblyInfo.cs
+C:\Users\user\Desktop\moe-hemis-back-end\MoE HEMIS\bin\Debug\netcoreapp2.1\MoE HEMIS.deps.json
+C:\Users\user\Desktop\moe-hemis-back-end\MoE HEMIS\bin\Debug\netcoreapp2.1\MoE HEMIS.runtimeconfig.json
+C:\Users\user\Desktop\moe-hemis-back-end\MoE HEMIS\bin\Debug\netcoreapp2.1\MoE HEMIS.runtimeconfig.dev.json
+C:\Users\user\Desktop\moe-hemis-back-end\MoE HEMIS\bin\Debug\netcoreapp2.1\MoE HEMIS.dll
+C:\Users\user\Desktop\moe-hemis-back-end\MoE HEMIS\bin\Debug\netcoreapp2.1\MoE HEMIS.pdb
+C:\Users\user\Desktop\moe-hemis-back-end\MoE HEMIS\bin\Debug\netcoreapp2.1\MoE HEMIS.Views.dll
+C:\Users\user\Desktop\moe-hemis-back-end\MoE HEMIS\bin\Debug\netcoreapp2.1\MoE HEMIS.Views.pdb
+C:\Users\user\Desktop\moe-hemis-back-end\MoE HEMIS\obj\Debug\netcoreapp2.1\MoE HEMIS.TagHelpers.input.cache
+C:\Users\user\Desktop\moe-hemis-back-end\MoE HEMIS\obj\Debug\netcoreapp2.1\MoE HEMIS.TagHelpers.output.cache
+C:\Users\user\Desktop\moe-hemis-back-end\MoE HEMIS\obj\Debug\netcoreapp2.1\MoE HEMIS.RazorCoreGenerate.cache
+C:\Users\user\Desktop\moe-hemis-back-end\MoE HEMIS\obj\Debug\netcoreapp2.1\Razor\Areas\Identity\Pages\Account\AccessDenied.g.cshtml.cs
+C:\Users\user\Desktop\moe-hemis-back-end\MoE HEMIS\obj\Debug\netcoreapp2.1\Razor\Areas\Identity\Pages\Account\AddDepartment.g.cshtml.cs
+C:\Users\user\Desktop\moe-hemis-back-end\MoE HEMIS\obj\Debug\netcoreapp2.1\Razor\Areas\Identity\Pages\Account\AddUser.g.cshtml.cs
+C:\Users\user\Desktop\moe-hemis-back-end\MoE HEMIS\obj\Debug\netcoreapp2.1\Razor\Areas\Identity\Pages\Account\Login.g.cshtml.cs
+C:\Users\user\Desktop\moe-hemis-back-end\MoE HEMIS\obj\Debug\netcoreapp2.1\Razor\Areas\Identity\Pages\Account\Logout.g.cshtml.cs
+C:\Users\user\Desktop\moe-hemis-back-end\MoE HEMIS\obj\Debug\netcoreapp2.1\Razor\Areas\Identity\Pages\Account\Manage\ChangePassword.g.cshtml.cs
+C:\Users\user\Desktop\moe-hemis-back-end\MoE HEMIS\obj\Debug\netcoreapp2.1\Razor\Areas\Identity\Pages\Account\Manage\Index.g.cshtml.cs
+C:\Users\user\Desktop\moe-hemis-back-end\MoE HEMIS\obj\Debug\netcoreapp2.1\Razor\Areas\Identity\Pages\Account\Manage\_Layout.g.cshtml.cs
+C:\Users\user\Desktop\moe-hemis-back-end\MoE HEMIS\obj\Debug\netcoreapp2.1\Razor\Areas\Identity\Pages\Account\Manage\_ManageNav.g.cshtml.cs
+C:\Users\user\Desktop\moe-hemis-back-end\MoE HEMIS\obj\Debug\netcoreapp2.1\Razor\Areas\Identity\Pages\Account\Manage\_StatusMessage.g.cshtml.cs
+C:\Users\user\Desktop\moe-hemis-back-end\MoE HEMIS\obj\Debug\netcoreapp2.1\Razor\Areas\Identity\Pages\Account\Manage\_ViewImports.g.cshtml.cs
+C:\Users\user\Desktop\moe-hemis-back-end\MoE HEMIS\obj\Debug\netcoreapp2.1\Razor\Areas\Identity\Pages\Account\Register.g.cshtml.cs
+C:\Users\user\Desktop\moe-hemis-back-end\MoE HEMIS\obj\Debug\netcoreapp2.1\Razor\Areas\Identity\Pages\Account\_ViewImports.g.cshtml.cs
+C:\Users\user\Desktop\moe-hemis-back-end\MoE HEMIS\obj\Debug\netcoreapp2.1\Razor\Areas\Identity\Pages\Error.g.cshtml.cs
+C:\Users\user\Desktop\moe-hemis-back-end\MoE HEMIS\obj\Debug\netcoreapp2.1\Razor\Areas\Identity\Pages\_ValidationScriptsPartial.g.cshtml.cs
+C:\Users\user\Desktop\moe-hemis-back-end\MoE HEMIS\obj\Debug\netcoreapp2.1\Razor\Areas\Identity\Pages\_ViewImports.g.cshtml.cs
+C:\Users\user\Desktop\moe-hemis-back-end\MoE HEMIS\obj\Debug\netcoreapp2.1\Razor\Areas\Identity\Pages\_ViewStart.g.cshtml.cs
+C:\Users\user\Desktop\moe-hemis-back-end\MoE HEMIS\obj\Debug\netcoreapp2.1\Razor\Views\College\AdministrativeStaff.g.cshtml.cs
+C:\Users\user\Desktop\moe-hemis-back-end\MoE HEMIS\obj\Debug\netcoreapp2.1\Razor\Views\College\Budget.g.cshtml.cs
+C:\Users\user\Desktop\moe-hemis-back-end\MoE HEMIS\obj\Debug\netcoreapp2.1\Razor\Views\College\Buildings.g.cshtml.cs
+C:\Users\user\Desktop\moe-hemis-back-end\MoE HEMIS\obj\Debug\netcoreapp2.1\Razor\Views\College\CostSharingReport.g.cshtml.cs
+C:\Users\user\Desktop\moe-hemis-back-end\MoE HEMIS\obj\Debug\netcoreapp2.1\Razor\Views\College\Index.g.cshtml.cs
+C:\Users\user\Desktop\moe-hemis-back-end\MoE HEMIS\obj\Debug\netcoreapp2.1\Razor\Views\College\InternalRevenue.g.cshtml.cs
+C:\Users\user\Desktop\moe-hemis-back-end\MoE HEMIS\obj\Debug\netcoreapp2.1\Razor\Views\College\Investment.g.cshtml.cs
+C:\Users\user\Desktop\moe-hemis-back-end\MoE HEMIS\obj\Debug\netcoreapp2.1\Razor\Views\College\SideNavView.g.cshtml.cs
+C:\Users\user\Desktop\moe-hemis-back-end\MoE HEMIS\obj\Debug\netcoreapp2.1\Razor\Views\College\StaffPrograms.g.cshtml.cs
+C:\Users\user\Desktop\moe-hemis-back-end\MoE HEMIS\obj\Debug\netcoreapp2.1\Razor\Views\College\StaffTrainings.g.cshtml.cs
+C:\Users\user\Desktop\moe-hemis-back-end\MoE HEMIS\obj\Debug\netcoreapp2.1\Razor\Views\College\SupportiveStaff.g.cshtml.cs
+C:\Users\user\Desktop\moe-hemis-back-end\MoE HEMIS\obj\Debug\netcoreapp2.1\Razor\Views\Department\AcademicStaff.g.cshtml.cs
+C:\Users\user\Desktop\moe-hemis-back-end\MoE HEMIS\obj\Debug\netcoreapp2.1\Razor\Views\Department\CompletionRates.g.cshtml.cs
+C:\Users\user\Desktop\moe-hemis-back-end\MoE HEMIS\obj\Debug\netcoreapp2.1\Razor\Views\Department\DisabledStudents.g.cshtml.cs
+C:\Users\user\Desktop\moe-hemis-back-end\MoE HEMIS\obj\Debug\netcoreapp2.1\Razor\Views\Department\EconomicalDisadvantagedAttritions.g.cshtml.cs
+C:\Users\user\Desktop\moe-hemis-back-end\MoE HEMIS\obj\Debug\netcoreapp2.1\Razor\Views\Department\EconomicalDisadvantagedEnrollments.g.cshtml.cs
+C:\Users\user\Desktop\moe-hemis-back-end\MoE HEMIS\obj\Debug\netcoreapp2.1\Razor\Views\Department\EconomicalDisadvantagedGraduates.g.cshtml.cs
+C:\Users\user\Desktop\moe-hemis-back-end\MoE HEMIS\obj\Debug\netcoreapp2.1\Razor\Views\Department\EmergingRegionAttritions.g.cshtml.cs
+C:\Users\user\Desktop\moe-hemis-back-end\MoE HEMIS\obj\Debug\netcoreapp2.1\Razor\Views\Department\EmergingRegionEnrollments.g.cshtml.cs
+C:\Users\user\Desktop\moe-hemis-back-end\MoE HEMIS\obj\Debug\netcoreapp2.1\Razor\Views\Department\EnrollmentByAge.g.cshtml.cs
+C:\Users\user\Desktop\moe-hemis-back-end\MoE HEMIS\obj\Debug\netcoreapp2.1\Razor\Views\Department\Enrollments.g.cshtml.cs
+C:\Users\user\Desktop\moe-hemis-back-end\MoE HEMIS\obj\Debug\netcoreapp2.1\Razor\Views\Department\Expatriate.g.cshtml.cs
+C:\Users\user\Desktop\moe-hemis-back-end\MoE HEMIS\obj\Debug\netcoreapp2.1\Razor\Views\Department\ForeignerStudents.g.cshtml.cs
+C:\Users\user\Desktop\moe-hemis-back-end\MoE HEMIS\obj\Debug\netcoreapp2.1\Razor\Views\Department\Graduates.g.cshtml.cs
+C:\Users\user\Desktop\moe-hemis-back-end\MoE HEMIS\obj\Debug\netcoreapp2.1\Razor\Views\Department\GraduatesTotalExitExamination.g.cshtml.cs
+C:\Users\user\Desktop\moe-hemis-back-end\MoE HEMIS\obj\Debug\netcoreapp2.1\Razor\Views\Department\GraduatesTotalExitExaminationByDisability.g.cshtml.cs
+C:\Users\user\Desktop\moe-hemis-back-end\MoE HEMIS\obj\Debug\netcoreapp2.1\Razor\Views\Department\GraduatesTotalExitExaminationByEconomy.g.cshtml.cs
+C:\Users\user\Desktop\moe-hemis-back-end\MoE HEMIS\obj\Debug\netcoreapp2.1\Razor\Views\Department\Index.g.cshtml.cs
+C:\Users\user\Desktop\moe-hemis-back-end\MoE HEMIS\obj\Debug\netcoreapp2.1\Razor\Views\Department\Internships.g.cshtml.cs
+C:\Users\user\Desktop\moe-hemis-back-end\MoE HEMIS\obj\Debug\netcoreapp2.1\Razor\Views\Department\NewEnrollment.g.cshtml.cs
+C:\Users\user\Desktop\moe-hemis-back-end\MoE HEMIS\obj\Debug\netcoreapp2.1\Razor\Views\Department\PastoralRegionEnrollments.g.cshtml.cs
+C:\Users\user\Desktop\moe-hemis-back-end\MoE HEMIS\obj\Debug\netcoreapp2.1\Razor\Views\Department\PostGraduateResearchPublications.g.cshtml.cs
+C:\Users\user\Desktop\moe-hemis-back-end\MoE HEMIS\obj\Debug\netcoreapp2.1\Razor\Views\Department\ProspectiveGraduate.g.cshtml.cs
+C:\Users\user\Desktop\moe-hemis-back-end\MoE HEMIS\obj\Debug\netcoreapp2.1\Razor\Views\Department\ResearchPapers.g.cshtml.cs
+C:\Users\user\Desktop\moe-hemis-back-end\MoE HEMIS\obj\Debug\netcoreapp2.1\Razor\Views\Department\RuralAttritions.g.cshtml.cs
+C:\Users\user\Desktop\moe-hemis-back-end\MoE HEMIS\obj\Debug\netcoreapp2.1\Razor\Views\Department\RuralEnrollments.g.cshtml.cs
+C:\Users\user\Desktop\moe-hemis-back-end\MoE HEMIS\obj\Debug\netcoreapp2.1\Razor\Views\Department\RuralGraduates.g.cshtml.cs
+C:\Users\user\Desktop\moe-hemis-back-end\MoE HEMIS\obj\Debug\netcoreapp2.1\Razor\Views\Department\SideNavView.g.cshtml.cs
+C:\Users\user\Desktop\moe-hemis-back-end\MoE HEMIS\obj\Debug\netcoreapp2.1\Razor\Views\Department\SpecialNeedAttritions.g.cshtml.cs
+C:\Users\user\Desktop\moe-hemis-back-end\MoE HEMIS\obj\Debug\netcoreapp2.1\Razor\Views\Department\SpecialNeedGraduates.g.cshtml.cs
+C:\Users\user\Desktop\moe-hemis-back-end\MoE HEMIS\obj\Debug\netcoreapp2.1\Razor\Views\Department\StaffPublications.g.cshtml.cs
+C:\Users\user\Desktop\moe-hemis-back-end\MoE HEMIS\obj\Debug\netcoreapp2.1\Razor\Views\Department\StudentAttritions.g.cshtml.cs
+C:\Users\user\Desktop\moe-hemis-back-end\MoE HEMIS\obj\Debug\netcoreapp2.1\Razor\Views\Department\TechnicalStaff.g.cshtml.cs
+C:\Users\user\Desktop\moe-hemis-back-end\MoE HEMIS\obj\Debug\netcoreapp2.1\Razor\Views\Home\Contact.g.cshtml.cs
+C:\Users\user\Desktop\moe-hemis-back-end\MoE HEMIS\obj\Debug\netcoreapp2.1\Razor\Views\Home\Index.g.cshtml.cs
+C:\Users\user\Desktop\moe-hemis-back-end\MoE HEMIS\obj\Debug\netcoreapp2.1\Razor\Views\Home\Privacy.g.cshtml.cs
+C:\Users\user\Desktop\moe-hemis-back-end\MoE HEMIS\obj\Debug\netcoreapp2.1\Razor\Views\Home\StudentReport.g.cshtml.cs
+C:\Users\user\Desktop\moe-hemis-back-end\MoE HEMIS\obj\Debug\netcoreapp2.1\Razor\Views\Institution\College.g.cshtml.cs
+C:\Users\user\Desktop\moe-hemis-back-end\MoE HEMIS\obj\Debug\netcoreapp2.1\Razor\Views\Institution\Department.g.cshtml.cs
+C:\Users\user\Desktop\moe-hemis-back-end\MoE HEMIS\obj\Debug\netcoreapp2.1\Razor\Views\Institution\EmergingRegionEnrollment.g.cshtml.cs
+C:\Users\user\Desktop\moe-hemis-back-end\MoE HEMIS\obj\Debug\netcoreapp2.1\Razor\Views\Institution\EnrollmentByAge.g.cshtml.cs
+C:\Users\user\Desktop\moe-hemis-back-end\MoE HEMIS\obj\Debug\netcoreapp2.1\Razor\Views\Institution\Index.g.cshtml.cs
+C:\Users\user\Desktop\moe-hemis-back-end\MoE HEMIS\obj\Debug\netcoreapp2.1\Razor\Views\Institution\ManagementDatas.g.cshtml.cs
+C:\Users\user\Desktop\moe-hemis-back-end\MoE HEMIS\obj\Debug\netcoreapp2.1\Razor\Views\Institution\PastoralRegionEnrollment.g.cshtml.cs
+C:\Users\user\Desktop\moe-hemis-back-end\MoE HEMIS\obj\Debug\netcoreapp2.1\Razor\Views\Institution\SidNavView.g.cshtml.cs
+C:\Users\user\Desktop\moe-hemis-back-end\MoE HEMIS\obj\Debug\netcoreapp2.1\Razor\Views\Institution\UgReport.g.cshtml.cs
+C:\Users\user\Desktop\moe-hemis-back-end\MoE HEMIS\obj\Debug\netcoreapp2.1\Razor\Views\Institution\UnjustifiableExpense.g.cshtml.cs
+C:\Users\user\Desktop\moe-hemis-back-end\MoE HEMIS\obj\Debug\netcoreapp2.1\Razor\Views\MainAdmin\Band.g.cshtml.cs
+C:\Users\user\Desktop\moe-hemis-back-end\MoE HEMIS\obj\Debug\netcoreapp2.1\Razor\Views\MainAdmin\Budget.g.cshtml.cs
+C:\Users\user\Desktop\moe-hemis-back-end\MoE HEMIS\obj\Debug\netcoreapp2.1\Razor\Views\MainAdmin\Index.g.cshtml.cs
+C:\Users\user\Desktop\moe-hemis-back-end\MoE HEMIS\obj\Debug\netcoreapp2.1\Razor\Views\MainAdmin\Institutions.g.cshtml.cs
+C:\Users\user\Desktop\moe-hemis-back-end\MoE HEMIS\obj\Debug\netcoreapp2.1\Razor\Views\MainAdmin\SideNavView.g.cshtml.cs
+C:\Users\user\Desktop\moe-hemis-back-end\MoE HEMIS\obj\Debug\netcoreapp2.1\Razor\Views\Shared\Error.g.cshtml.cs
+C:\Users\user\Desktop\moe-hemis-back-end\MoE HEMIS\obj\Debug\netcoreapp2.1\Razor\Views\Shared\Input\_EconomicQuintile.g.cshtml.cs
+C:\Users\user\Desktop\moe-hemis-back-end\MoE HEMIS\obj\Debug\netcoreapp2.1\Razor\Views\Shared\Input\_Female.g.cshtml.cs
+C:\Users\user\Desktop\moe-hemis-back-end\MoE HEMIS\obj\Debug\netcoreapp2.1\Razor\Views\Shared\Input\_Male.g.cshtml.cs
+C:\Users\user\Desktop\moe-hemis-back-end\MoE HEMIS\obj\Debug\netcoreapp2.1\Razor\Views\Shared\Input\_StudyLevel.g.cshtml.cs
+C:\Users\user\Desktop\moe-hemis-back-end\MoE HEMIS\obj\Debug\netcoreapp2.1\Razor\Views\Shared\Input\_StudyProgram.g.cshtml.cs
+C:\Users\user\Desktop\moe-hemis-back-end\MoE HEMIS\obj\Debug\netcoreapp2.1\Razor\Views\Shared\_CookieConsentPartial.g.cshtml.cs
+C:\Users\user\Desktop\moe-hemis-back-end\MoE HEMIS\obj\Debug\netcoreapp2.1\Razor\Views\Shared\_Layout.g.cshtml.cs
+C:\Users\user\Desktop\moe-hemis-back-end\MoE HEMIS\obj\Debug\netcoreapp2.1\Razor\Views\Shared\_login.g.cshtml.cs
+C:\Users\user\Desktop\moe-hemis-back-end\MoE HEMIS\obj\Debug\netcoreapp2.1\Razor\Views\Shared\_LoginPartial.g.cshtml.cs
+C:\Users\user\Desktop\moe-hemis-back-end\MoE HEMIS\obj\Debug\netcoreapp2.1\Razor\Views\Shared\_ValidationScriptsPartial.g.cshtml.cs
+C:\Users\user\Desktop\moe-hemis-back-end\MoE HEMIS\obj\Debug\netcoreapp2.1\Razor\Views\_ViewImports.g.cshtml.cs
+C:\Users\user\Desktop\moe-hemis-back-end\MoE HEMIS\obj\Debug\netcoreapp2.1\Razor\Views\_ViewStart.g.cshtml.cs
+C:\Users\user\Desktop\moe-hemis-back-end\MoE HEMIS\obj\Debug\netcoreapp2.1\MoE HEMIS.RazorTargetAssemblyInfo.cache
+C:\Users\user\Desktop\moe-hemis-back-end\MoE HEMIS\obj\Debug\netcoreapp2.1\MoE HEMIS.RazorTargetAssemblyInfo.cs
+C:\Users\user\Desktop\moe-hemis-back-end\MoE HEMIS\obj\Debug\netcoreapp2.1\MoE HEMIS.Views.pdb
+C:\Users\user\Desktop\moe-hemis-back-end\MoE HEMIS\obj\Debug\netcoreapp2.1\MoE HEMIS.dll
+C:\Users\user\Desktop\moe-hemis-back-end\MoE HEMIS\obj\Debug\netcoreapp2.1\MoE HEMIS.pdb
+C:\Users\user\Desktop\moe-hemis-back-end\MoE HEMIS\obj\Debug\netcoreapp2.1\MoE HEMIS.csproj.CopyComplete
+C:\Users\user\Desktop\moe-hemis-back-end\MoE HEMIS\obj\Debug\netcoreapp2.1\MoE HEMIS.csprojAssemblyReference.cache
+C:\Users\user\Desktop\moe-hemis-back-end\MoE HEMIS\obj\Debug\netcoreapp2.1\Razor\Views\Department\IntakeCapacities.g.cshtml.cs
+C:\Users\gemme\OneDrive\Documents\moe-hemis-back-end\MoE HEMIS\bin\Debug\netcoreapp2.1\MoE HEMIS.deps.json
+C:\Users\gemme\OneDrive\Documents\moe-hemis-back-end\MoE HEMIS\bin\Debug\netcoreapp2.1\MoE HEMIS.runtimeconfig.json
+C:\Users\gemme\OneDrive\Documents\moe-hemis-back-end\MoE HEMIS\bin\Debug\netcoreapp2.1\MoE HEMIS.runtimeconfig.dev.json
+C:\Users\gemme\OneDrive\Documents\moe-hemis-back-end\MoE HEMIS\bin\Debug\netcoreapp2.1\MoE HEMIS.dll
+C:\Users\gemme\OneDrive\Documents\moe-hemis-back-end\MoE HEMIS\bin\Debug\netcoreapp2.1\MoE HEMIS.pdb
+C:\Users\gemme\OneDrive\Documents\moe-hemis-back-end\MoE HEMIS\bin\Debug\netcoreapp2.1\MoE HEMIS.Views.dll
+C:\Users\gemme\OneDrive\Documents\moe-hemis-back-end\MoE HEMIS\bin\Debug\netcoreapp2.1\MoE HEMIS.Views.pdb
+C:\Users\gemme\OneDrive\Documents\moe-hemis-back-end\MoE HEMIS\obj\Debug\netcoreapp2.1\MoE HEMIS.csprojAssemblyReference.cache
+C:\Users\gemme\OneDrive\Documents\moe-hemis-back-end\MoE HEMIS\obj\Debug\netcoreapp2.1\MoE HEMIS.csproj.CoreCompileInputs.cache
+C:\Users\gemme\OneDrive\Documents\moe-hemis-back-end\MoE HEMIS\obj\Debug\netcoreapp2.1\MoE HEMIS.RazorAssemblyInfo.cache
+C:\Users\gemme\OneDrive\Documents\moe-hemis-back-end\MoE HEMIS\obj\Debug\netcoreapp2.1\MoE HEMIS.RazorAssemblyInfo.cs
+C:\Users\gemme\OneDrive\Documents\moe-hemis-back-end\MoE HEMIS\obj\Debug\netcoreapp2.1\UserSecretsAssemblyInfo.cs
+C:\Users\gemme\OneDrive\Documents\moe-hemis-back-end\MoE HEMIS\obj\Debug\netcoreapp2.1\MoE HEMIS.AssemblyInfoInputs.cache
+C:\Users\gemme\OneDrive\Documents\moe-hemis-back-end\MoE HEMIS\obj\Debug\netcoreapp2.1\MoE HEMIS.AssemblyInfo.cs
+C:\Users\gemme\OneDrive\Documents\moe-hemis-back-end\MoE HEMIS\obj\Debug\netcoreapp2.1\MoE HEMIS.TagHelpers.input.cache
+C:\Users\gemme\OneDrive\Documents\moe-hemis-back-end\MoE HEMIS\obj\Debug\netcoreapp2.1\MoE HEMIS.TagHelpers.output.cache
+C:\Users\gemme\OneDrive\Documents\moe-hemis-back-end\MoE HEMIS\obj\Debug\netcoreapp2.1\MoE HEMIS.RazorCoreGenerate.cache
+C:\Users\gemme\OneDrive\Documents\moe-hemis-back-end\MoE HEMIS\obj\Debug\netcoreapp2.1\Razor\Areas\Identity\Pages\Account\AccessDenied.g.cshtml.cs
+C:\Users\gemme\OneDrive\Documents\moe-hemis-back-end\MoE HEMIS\obj\Debug\netcoreapp2.1\Razor\Areas\Identity\Pages\Account\AddDepartment.g.cshtml.cs
+C:\Users\gemme\OneDrive\Documents\moe-hemis-back-end\MoE HEMIS\obj\Debug\netcoreapp2.1\Razor\Areas\Identity\Pages\Account\AddUser.g.cshtml.cs
+C:\Users\gemme\OneDrive\Documents\moe-hemis-back-end\MoE HEMIS\obj\Debug\netcoreapp2.1\Razor\Areas\Identity\Pages\Account\Login.g.cshtml.cs
+C:\Users\gemme\OneDrive\Documents\moe-hemis-back-end\MoE HEMIS\obj\Debug\netcoreapp2.1\Razor\Areas\Identity\Pages\Account\Logout.g.cshtml.cs
+C:\Users\gemme\OneDrive\Documents\moe-hemis-back-end\MoE HEMIS\obj\Debug\netcoreapp2.1\Razor\Areas\Identity\Pages\Account\Manage\ChangePassword.g.cshtml.cs
+C:\Users\gemme\OneDrive\Documents\moe-hemis-back-end\MoE HEMIS\obj\Debug\netcoreapp2.1\Razor\Areas\Identity\Pages\Account\Manage\Index.g.cshtml.cs
+C:\Users\gemme\OneDrive\Documents\moe-hemis-back-end\MoE HEMIS\obj\Debug\netcoreapp2.1\Razor\Areas\Identity\Pages\Account\Manage\_Layout.g.cshtml.cs
+C:\Users\gemme\OneDrive\Documents\moe-hemis-back-end\MoE HEMIS\obj\Debug\netcoreapp2.1\Razor\Areas\Identity\Pages\Account\Manage\_ManageNav.g.cshtml.cs
+C:\Users\gemme\OneDrive\Documents\moe-hemis-back-end\MoE HEMIS\obj\Debug\netcoreapp2.1\Razor\Areas\Identity\Pages\Account\Manage\_StatusMessage.g.cshtml.cs
+C:\Users\gemme\OneDrive\Documents\moe-hemis-back-end\MoE HEMIS\obj\Debug\netcoreapp2.1\Razor\Areas\Identity\Pages\Account\Manage\_ViewImports.g.cshtml.cs
+C:\Users\gemme\OneDrive\Documents\moe-hemis-back-end\MoE HEMIS\obj\Debug\netcoreapp2.1\Razor\Areas\Identity\Pages\Account\Register.g.cshtml.cs
+C:\Users\gemme\OneDrive\Documents\moe-hemis-back-end\MoE HEMIS\obj\Debug\netcoreapp2.1\Razor\Areas\Identity\Pages\Account\_ViewImports.g.cshtml.cs
+C:\Users\gemme\OneDrive\Documents\moe-hemis-back-end\MoE HEMIS\obj\Debug\netcoreapp2.1\Razor\Areas\Identity\Pages\Error.g.cshtml.cs
+C:\Users\gemme\OneDrive\Documents\moe-hemis-back-end\MoE HEMIS\obj\Debug\netcoreapp2.1\Razor\Areas\Identity\Pages\_ValidationScriptsPartial.g.cshtml.cs
+C:\Users\gemme\OneDrive\Documents\moe-hemis-back-end\MoE HEMIS\obj\Debug\netcoreapp2.1\Razor\Areas\Identity\Pages\_ViewImports.g.cshtml.cs
+C:\Users\gemme\OneDrive\Documents\moe-hemis-back-end\MoE HEMIS\obj\Debug\netcoreapp2.1\Razor\Areas\Identity\Pages\_ViewStart.g.cshtml.cs
+C:\Users\gemme\OneDrive\Documents\moe-hemis-back-end\MoE HEMIS\obj\Debug\netcoreapp2.1\Razor\Views\College\AdministrativeStaff.g.cshtml.cs
+C:\Users\gemme\OneDrive\Documents\moe-hemis-back-end\MoE HEMIS\obj\Debug\netcoreapp2.1\Razor\Views\College\Budget.g.cshtml.cs
+C:\Users\gemme\OneDrive\Documents\moe-hemis-back-end\MoE HEMIS\obj\Debug\netcoreapp2.1\Razor\Views\College\Buildings.g.cshtml.cs
+C:\Users\gemme\OneDrive\Documents\moe-hemis-back-end\MoE HEMIS\obj\Debug\netcoreapp2.1\Razor\Views\College\CostSharingReport.g.cshtml.cs
+C:\Users\gemme\OneDrive\Documents\moe-hemis-back-end\MoE HEMIS\obj\Debug\netcoreapp2.1\Razor\Views\College\Index.g.cshtml.cs
+C:\Users\gemme\OneDrive\Documents\moe-hemis-back-end\MoE HEMIS\obj\Debug\netcoreapp2.1\Razor\Views\College\InternalRevenue.g.cshtml.cs
+C:\Users\gemme\OneDrive\Documents\moe-hemis-back-end\MoE HEMIS\obj\Debug\netcoreapp2.1\Razor\Views\College\Investment.g.cshtml.cs
+C:\Users\gemme\OneDrive\Documents\moe-hemis-back-end\MoE HEMIS\obj\Debug\netcoreapp2.1\Razor\Views\College\SideNavView.g.cshtml.cs
+C:\Users\gemme\OneDrive\Documents\moe-hemis-back-end\MoE HEMIS\obj\Debug\netcoreapp2.1\Razor\Views\College\StaffPrograms.g.cshtml.cs
+C:\Users\gemme\OneDrive\Documents\moe-hemis-back-end\MoE HEMIS\obj\Debug\netcoreapp2.1\Razor\Views\College\StaffTrainings.g.cshtml.cs
+C:\Users\gemme\OneDrive\Documents\moe-hemis-back-end\MoE HEMIS\obj\Debug\netcoreapp2.1\Razor\Views\College\SupportiveStaff.g.cshtml.cs
+C:\Users\gemme\OneDrive\Documents\moe-hemis-back-end\MoE HEMIS\obj\Debug\netcoreapp2.1\Razor\Views\Department\AcademicStaff.g.cshtml.cs
+C:\Users\gemme\OneDrive\Documents\moe-hemis-back-end\MoE HEMIS\obj\Debug\netcoreapp2.1\Razor\Views\Department\CompletionRates.g.cshtml.cs
+C:\Users\gemme\OneDrive\Documents\moe-hemis-back-end\MoE HEMIS\obj\Debug\netcoreapp2.1\Razor\Views\Department\DisabledStudents.g.cshtml.cs
+C:\Users\gemme\OneDrive\Documents\moe-hemis-back-end\MoE HEMIS\obj\Debug\netcoreapp2.1\Razor\Views\Department\EconomicalDisadvantagedAttritions.g.cshtml.cs
+C:\Users\gemme\OneDrive\Documents\moe-hemis-back-end\MoE HEMIS\obj\Debug\netcoreapp2.1\Razor\Views\Department\EconomicalDisadvantagedEnrollments.g.cshtml.cs
+C:\Users\gemme\OneDrive\Documents\moe-hemis-back-end\MoE HEMIS\obj\Debug\netcoreapp2.1\Razor\Views\Department\EconomicalDisadvantagedGraduates.g.cshtml.cs
+C:\Users\gemme\OneDrive\Documents\moe-hemis-back-end\MoE HEMIS\obj\Debug\netcoreapp2.1\Razor\Views\Department\EmergingRegionAttritions.g.cshtml.cs
+C:\Users\gemme\OneDrive\Documents\moe-hemis-back-end\MoE HEMIS\obj\Debug\netcoreapp2.1\Razor\Views\Department\EmergingRegionEnrollments.g.cshtml.cs
+C:\Users\gemme\OneDrive\Documents\moe-hemis-back-end\MoE HEMIS\obj\Debug\netcoreapp2.1\Razor\Views\Department\EnrollmentByAge.g.cshtml.cs
+C:\Users\gemme\OneDrive\Documents\moe-hemis-back-end\MoE HEMIS\obj\Debug\netcoreapp2.1\Razor\Views\Department\Enrollments.g.cshtml.cs
+C:\Users\gemme\OneDrive\Documents\moe-hemis-back-end\MoE HEMIS\obj\Debug\netcoreapp2.1\Razor\Views\Department\Expatriate.g.cshtml.cs
+C:\Users\gemme\OneDrive\Documents\moe-hemis-back-end\MoE HEMIS\obj\Debug\netcoreapp2.1\Razor\Views\Department\ForeignerStudents.g.cshtml.cs
+C:\Users\gemme\OneDrive\Documents\moe-hemis-back-end\MoE HEMIS\obj\Debug\netcoreapp2.1\Razor\Views\Department\Graduates.g.cshtml.cs
+C:\Users\gemme\OneDrive\Documents\moe-hemis-back-end\MoE HEMIS\obj\Debug\netcoreapp2.1\Razor\Views\Department\GraduatesTotalExitExamination.g.cshtml.cs
+C:\Users\gemme\OneDrive\Documents\moe-hemis-back-end\MoE HEMIS\obj\Debug\netcoreapp2.1\Razor\Views\Department\GraduatesTotalExitExaminationByDisability.g.cshtml.cs
+C:\Users\gemme\OneDrive\Documents\moe-hemis-back-end\MoE HEMIS\obj\Debug\netcoreapp2.1\Razor\Views\Department\GraduatesTotalExitExaminationByEconomy.g.cshtml.cs
+C:\Users\gemme\OneDrive\Documents\moe-hemis-back-end\MoE HEMIS\obj\Debug\netcoreapp2.1\Razor\Views\Department\Index.g.cshtml.cs
+C:\Users\gemme\OneDrive\Documents\moe-hemis-back-end\MoE HEMIS\obj\Debug\netcoreapp2.1\Razor\Views\Department\IntakeCapacities.g.cshtml.cs
+C:\Users\gemme\OneDrive\Documents\moe-hemis-back-end\MoE HEMIS\obj\Debug\netcoreapp2.1\Razor\Views\Department\Internships.g.cshtml.cs
+C:\Users\gemme\OneDrive\Documents\moe-hemis-back-end\MoE HEMIS\obj\Debug\netcoreapp2.1\Razor\Views\Department\NewEnrollment.g.cshtml.cs
+C:\Users\gemme\OneDrive\Documents\moe-hemis-back-end\MoE HEMIS\obj\Debug\netcoreapp2.1\Razor\Views\Department\PastoralRegionEnrollments.g.cshtml.cs
+C:\Users\gemme\OneDrive\Documents\moe-hemis-back-end\MoE HEMIS\obj\Debug\netcoreapp2.1\Razor\Views\Department\PostGraduateResearchPublications.g.cshtml.cs
+C:\Users\gemme\OneDrive\Documents\moe-hemis-back-end\MoE HEMIS\obj\Debug\netcoreapp2.1\Razor\Views\Department\ProspectiveGraduate.g.cshtml.cs
+C:\Users\gemme\OneDrive\Documents\moe-hemis-back-end\MoE HEMIS\obj\Debug\netcoreapp2.1\Razor\Views\Department\ResearchPapers.g.cshtml.cs
+C:\Users\gemme\OneDrive\Documents\moe-hemis-back-end\MoE HEMIS\obj\Debug\netcoreapp2.1\Razor\Views\Department\RuralAttritions.g.cshtml.cs
+C:\Users\gemme\OneDrive\Documents\moe-hemis-back-end\MoE HEMIS\obj\Debug\netcoreapp2.1\Razor\Views\Department\RuralEnrollments.g.cshtml.cs
+C:\Users\gemme\OneDrive\Documents\moe-hemis-back-end\MoE HEMIS\obj\Debug\netcoreapp2.1\Razor\Views\Department\RuralGraduates.g.cshtml.cs
+C:\Users\gemme\OneDrive\Documents\moe-hemis-back-end\MoE HEMIS\obj\Debug\netcoreapp2.1\Razor\Views\Department\SideNavView.g.cshtml.cs
+C:\Users\gemme\OneDrive\Documents\moe-hemis-back-end\MoE HEMIS\obj\Debug\netcoreapp2.1\Razor\Views\Department\SpecialNeedAttritions.g.cshtml.cs
+C:\Users\gemme\OneDrive\Documents\moe-hemis-back-end\MoE HEMIS\obj\Debug\netcoreapp2.1\Razor\Views\Department\SpecialNeedGraduates.g.cshtml.cs
+C:\Users\gemme\OneDrive\Documents\moe-hemis-back-end\MoE HEMIS\obj\Debug\netcoreapp2.1\Razor\Views\Department\StaffPublications.g.cshtml.cs
+C:\Users\gemme\OneDrive\Documents\moe-hemis-back-end\MoE HEMIS\obj\Debug\netcoreapp2.1\Razor\Views\Department\StudentAttritions.g.cshtml.cs
+C:\Users\gemme\OneDrive\Documents\moe-hemis-back-end\MoE HEMIS\obj\Debug\netcoreapp2.1\Razor\Views\Department\TechnicalStaff.g.cshtml.cs
+C:\Users\gemme\OneDrive\Documents\moe-hemis-back-end\MoE HEMIS\obj\Debug\netcoreapp2.1\Razor\Views\Home\Contact.g.cshtml.cs
+C:\Users\gemme\OneDrive\Documents\moe-hemis-back-end\MoE HEMIS\obj\Debug\netcoreapp2.1\Razor\Views\Home\Index.g.cshtml.cs
+C:\Users\gemme\OneDrive\Documents\moe-hemis-back-end\MoE HEMIS\obj\Debug\netcoreapp2.1\Razor\Views\Home\Privacy.g.cshtml.cs
+C:\Users\gemme\OneDrive\Documents\moe-hemis-back-end\MoE HEMIS\obj\Debug\netcoreapp2.1\Razor\Views\Home\StudentReport.g.cshtml.cs
+C:\Users\gemme\OneDrive\Documents\moe-hemis-back-end\MoE HEMIS\obj\Debug\netcoreapp2.1\Razor\Views\Institution\College.g.cshtml.cs
+C:\Users\gemme\OneDrive\Documents\moe-hemis-back-end\MoE HEMIS\obj\Debug\netcoreapp2.1\Razor\Views\Institution\Department.g.cshtml.cs
+C:\Users\gemme\OneDrive\Documents\moe-hemis-back-end\MoE HEMIS\obj\Debug\netcoreapp2.1\Razor\Views\Institution\EmergingRegionEnrollment.g.cshtml.cs
+C:\Users\gemme\OneDrive\Documents\moe-hemis-back-end\MoE HEMIS\obj\Debug\netcoreapp2.1\Razor\Views\Institution\EnrollmentByAge.g.cshtml.cs
+C:\Users\gemme\OneDrive\Documents\moe-hemis-back-end\MoE HEMIS\obj\Debug\netcoreapp2.1\Razor\Views\Institution\Index.g.cshtml.cs
+C:\Users\gemme\OneDrive\Documents\moe-hemis-back-end\MoE HEMIS\obj\Debug\netcoreapp2.1\Razor\Views\Institution\ManagementDatas.g.cshtml.cs
+C:\Users\gemme\OneDrive\Documents\moe-hemis-back-end\MoE HEMIS\obj\Debug\netcoreapp2.1\Razor\Views\Institution\PastoralRegionEnrollment.g.cshtml.cs
+C:\Users\gemme\OneDrive\Documents\moe-hemis-back-end\MoE HEMIS\obj\Debug\netcoreapp2.1\Razor\Views\Institution\SidNavView.g.cshtml.cs
+C:\Users\gemme\OneDrive\Documents\moe-hemis-back-end\MoE HEMIS\obj\Debug\netcoreapp2.1\Razor\Views\Institution\UgReport.g.cshtml.cs
+C:\Users\gemme\OneDrive\Documents\moe-hemis-back-end\MoE HEMIS\obj\Debug\netcoreapp2.1\Razor\Views\Institution\UnjustifiableExpense.g.cshtml.cs
+C:\Users\gemme\OneDrive\Documents\moe-hemis-back-end\MoE HEMIS\obj\Debug\netcoreapp2.1\Razor\Views\MainAdmin\Band.g.cshtml.cs
+C:\Users\gemme\OneDrive\Documents\moe-hemis-back-end\MoE HEMIS\obj\Debug\netcoreapp2.1\Razor\Views\MainAdmin\Budget.g.cshtml.cs
+C:\Users\gemme\OneDrive\Documents\moe-hemis-back-end\MoE HEMIS\obj\Debug\netcoreapp2.1\Razor\Views\MainAdmin\Index.g.cshtml.cs
+C:\Users\gemme\OneDrive\Documents\moe-hemis-back-end\MoE HEMIS\obj\Debug\netcoreapp2.1\Razor\Views\MainAdmin\Institutions.g.cshtml.cs
+C:\Users\gemme\OneDrive\Documents\moe-hemis-back-end\MoE HEMIS\obj\Debug\netcoreapp2.1\Razor\Views\MainAdmin\SideNavView.g.cshtml.cs
+C:\Users\gemme\OneDrive\Documents\moe-hemis-back-end\MoE HEMIS\obj\Debug\netcoreapp2.1\Razor\Views\Shared\Error.g.cshtml.cs
+C:\Users\gemme\OneDrive\Documents\moe-hemis-back-end\MoE HEMIS\obj\Debug\netcoreapp2.1\Razor\Views\Shared\Input\_EconomicQuintile.g.cshtml.cs
+C:\Users\gemme\OneDrive\Documents\moe-hemis-back-end\MoE HEMIS\obj\Debug\netcoreapp2.1\Razor\Views\Shared\Input\_Female.g.cshtml.cs
+C:\Users\gemme\OneDrive\Documents\moe-hemis-back-end\MoE HEMIS\obj\Debug\netcoreapp2.1\Razor\Views\Shared\Input\_Male.g.cshtml.cs
+C:\Users\gemme\OneDrive\Documents\moe-hemis-back-end\MoE HEMIS\obj\Debug\netcoreapp2.1\Razor\Views\Shared\Input\_StudyLevel.g.cshtml.cs
+C:\Users\gemme\OneDrive\Documents\moe-hemis-back-end\MoE HEMIS\obj\Debug\netcoreapp2.1\Razor\Views\Shared\Input\_StudyProgram.g.cshtml.cs
+C:\Users\gemme\OneDrive\Documents\moe-hemis-back-end\MoE HEMIS\obj\Debug\netcoreapp2.1\Razor\Views\Shared\_CookieConsentPartial.g.cshtml.cs
+C:\Users\gemme\OneDrive\Documents\moe-hemis-back-end\MoE HEMIS\obj\Debug\netcoreapp2.1\Razor\Views\Shared\_Layout.g.cshtml.cs
+C:\Users\gemme\OneDrive\Documents\moe-hemis-back-end\MoE HEMIS\obj\Debug\netcoreapp2.1\Razor\Views\Shared\_login.g.cshtml.cs
+C:\Users\gemme\OneDrive\Documents\moe-hemis-back-end\MoE HEMIS\obj\Debug\netcoreapp2.1\Razor\Views\Shared\_LoginPartial.g.cshtml.cs
+C:\Users\gemme\OneDrive\Documents\moe-hemis-back-end\MoE HEMIS\obj\Debug\netcoreapp2.1\Razor\Views\Shared\_ValidationScriptsPartial.g.cshtml.cs
+C:\Users\gemme\OneDrive\Documents\moe-hemis-back-end\MoE HEMIS\obj\Debug\netcoreapp2.1\Razor\Views\_ViewImports.g.cshtml.cs
+C:\Users\gemme\OneDrive\Documents\moe-hemis-back-end\MoE HEMIS\obj\Debug\netcoreapp2.1\Razor\Views\_ViewStart.g.cshtml.cs
+C:\Users\gemme\OneDrive\Documents\moe-hemis-back-end\MoE HEMIS\obj\Debug\netcoreapp2.1\MoE HEMIS.RazorTargetAssemblyInfo.cache
+C:\Users\gemme\OneDrive\Documents\moe-hemis-back-end\MoE HEMIS\obj\Debug\netcoreapp2.1\MoE HEMIS.RazorTargetAssemblyInfo.cs
+C:\Users\gemme\OneDrive\Documents\moe-hemis-back-end\MoE HEMIS\obj\Debug\netcoreapp2.1\MoE HEMIS.Views.pdb
+C:\Users\gemme\OneDrive\Documents\moe-hemis-back-end\MoE HEMIS\obj\Debug\netcoreapp2.1\MoE HEMIS.dll
+C:\Users\gemme\OneDrive\Documents\moe-hemis-back-end\MoE HEMIS\obj\Debug\netcoreapp2.1\MoE HEMIS.pdb
+C:\Users\gemme\OneDrive\Documents\moe-hemis-back-end\MoE HEMIS\obj\Debug\netcoreapp2.1\MoE HEMIS.csproj.CopyComplete

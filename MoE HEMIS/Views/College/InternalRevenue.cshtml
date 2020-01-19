@@ -1,0 +1,176 @@
+﻿@Model CollegeViewModel
+<partial name="SideNavView" />
+
+<!-- MAIN -->
+<div class="main">
+    <!-- MAIN CONTENT -->
+    <div class="main-content">
+        <div class="row" id="addInternalRevenue">
+            <div class="col-md-9">
+                <h3 class="page-title">Add Internal Revenue</h3>
+                <div class="panel"> 
+                    <div class="panel-body">
+                        <form id="new-form" enctype="multipart/form-data">
+                            <div class="row">
+                                <input type="number" hidden name="collegeId" value=@Model.College.CollegeId>
+                                <div class="col-lg-6">
+                                    <div class="form-group">
+                                        <label>Revenue Description</label>
+                                        <select class="form-control" name="revenue">
+                                            <option value="0">FARMING</option>
+                                            <option value="1">EDUCATION PROGRAMS TUTION FEE</option>
+                                            <option value="2">TRAINING AND CONSULTANCY</option>
+                                            <option value="3">BUSINESS ENTITIES</option>
+                                            <option value="4">FUNDS</option>
+                                            <option value="5">HOSPITAL SERVICES</option>
+                                            <option value="6">OTHERS PAYABLE</option>
+                                        </select>
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="number" class="form-control" required="" name="income" placeholder="Income" />
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="number" class="form-control" required="" name="expense" placeholder="Expense" />
+                                    </div>
+
+                                </div>
+
+                            </div>
+                            <button type="submit" class="btn btn-primary">Submit </button>
+                        </form>
+                    </div>
+                </div> 
+            </div> 
+        </div>
+
+        <hr /> 
+        <div class="row">
+            <div class="col-lg-12">
+
+                <h3 class="page-title">Internal Revenue List</h3>
+                <div class="panel">
+                    <div class="panel-heading">
+                        <h3 class="panel-title">Internal Revenue List</h3>
+                    </div>
+                    <div class="panel-body">
+                        <table class="table table-sorting table-hover table-striped" id="Internal-Revenue-table">
+                            <thead>
+                                <tr>
+                                    <th>Income</th>
+                                    <th>Expense</th>
+                                    <th>Revenue</th>
+                                    <th></th>
+                                    <th></th>
+
+                                </tr>
+                            </thead>
+                            <tbody></tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- / row -->
+    </div>
+    <!-- END MAIN CONTENT -->
+</div>
+<!-- END MAIN -->
+<!-- Modal -->
+<div id="edit-model-modal" class="modal" role="dialog">
+    <div class="modal-dialog modal-lg">
+
+        <!-- Modal content-->
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title">Edit Internal Revenue</h4>
+            </div>
+            <div class="modal-body">
+                <form id="edit-form">
+                    <div class="row">
+                        <input type="number" hidden name="collegeId" value=@Model.College.CollegeId>
+                        <input type="number" hidden name="internalRevenueId">
+                        <div class="col-lg-6">
+                            <div class="form-group">
+                                <label>Revenue Description</label>
+                                <select class="form-control" name="revenue">
+                                    <option value="0">FARMING</option>
+                                    <option value="1">EDUCATION PROGRAMS TUTION FEE</option>
+                                    <option value="2">TRAINING AND CONSULTANCY</option>
+                                    <option value="3">BUSINESS ENTITIES</option>
+                                    <option value="4">FUNDS</option>
+                                    <option value="5">HOSPITAL SERVICES</option>
+                                    <option value="6">OTHERS PAYABLE</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <input type="number" class="form-control" required="" name="income" placeholder="Income" />
+                            </div>
+                            <div class="form-group">
+                                <input type="number" class="form-control" required="" name="expense" placeholder="Expense" />
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <button type="submit" class="btn btn-primary">Update </button>
+                </form>
+            </div>
+
+        </div>
+
+    </div>
+</div>
+
+@section Scripts
+    {
+
+    <script src="~/assets/vendor/data-tables/jquery.dataTables.min.js"></script>
+    <script src="~/assets/vendor/data-tables/dataTables.bootstrap.min.js"></script>
+    <script src="~/assets/vendor/data-tables/dataTables.colReorder.js"></script>
+    <script src="~/assets/vendor/data-tables/dataTables.tableTools.js"></script>
+    <script src="~/assets/vendor/toastr/toastr.min.js"></script>
+    <script src="~/assets/scripts/Enums.js"></script>
+
+
+    <script>
+        var url = "/api/InternalRevenues"
+        var tableId = "#Internal-Revenue-table"
+        var newformId = "#new-form"
+        var editformId = "#edit-form"
+        var dataId = "internalRevenueId"
+        var collegeid = @Model.College.CollegeId
+        var fetchUrl = "/api/InternalRevenues/ByCollege/" + collegeid
+
+        var selectedrow;
+
+        var columns = [
+            { data: "income" },
+            { data: "expense" },
+            {
+                data: "revenue",
+                render: function (data, type, internalRevenue) {
+                    return REVENUEDESCRIPTION[data]
+                }
+            },
+            {
+                data: dataId,
+                render: function (data, type, internalRevenue) {
+                    return '<button type="button" class="btn btn-primary btn-sm edit-data-button" data-toggle="modal" data-target="#edit-model-modal">Edit</button> '
+
+                }
+            },
+            {
+                data: dataId,
+                render: function (data, type, internalRevenue) {
+                    return '<button type = "button"  class="btn btn-danger btn-sm delete-data-button" data-model-id =' + data + ' > Delete</button > '
+                }
+            }
+
+        ]
+
+
+    </script>
+    <script src="~/assets/scripts/data-crud.js"></script>
+}

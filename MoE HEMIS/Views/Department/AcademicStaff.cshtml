@@ -1,0 +1,339 @@
+﻿@Model  DepartmentViewModel
+<partial name="SideNavView" />
+<div class="main">
+    <div class="main-content">
+        <div class="row" id="addAcademicStaff">
+            <div class="col-md-12">
+                <h3 class="page-title">Add Academic Staff</h3>
+                <div class="panel">
+                    <div class="panel-body">
+                        <form id="new-form">
+                            <div class="row">
+                                <div class="col-lg-4">
+                                    <input type="number" hidden name="departmentId" value=@Model.Department.DepartmentId>
+                                    <div class="form-group">
+                                        <label class="control-label" for="Name">Name</label>
+                                        <input name="name" id="Name" class="form-control" type="text" placeholder="Enter your name" />
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="control-label" for="Sex">Sex</label>
+                                        <select class="form-control" name="sex" id="Sex" asp-items="Html.GetEnumSelectList<MoE_HEMIS.Models.Sex>()"></select>
+                                    </div>
+
+
+                                    <div class="form-group">
+                                        <label class="control-label" for="BirthDate">Birth Date</label>
+                                        <input name="birthDate" id="BirthDate" class="form-control" type="date" />
+                                    </div>
+
+                                    <div class="form-group ">
+                                        <label class="control-label" for="Nationality">Nationality</label>
+                                        <input name="nationality" id="Nationality" class="form-control" type="text" placeholder="Enter your nationality" />
+                                    </div>
+                                    <div class="form-group ">
+                                        <label class="control-label" for="Salary">Salary</label>
+                                        <input name="salary" id="Salary" class="form-control" type="number" min="100" />
+                                    </div>
+
+                                    
+
+                                </div>
+                                
+                                <div class="col-lg-4">
+                                    <div class="form-group">
+                                        <label class="control-label" for="Employment">Employment</label>
+                                        <select class="form-control" name="employment" id="Employment" asp-items="Html.GetEnumSelectList<MoE_HEMIS.Models.EmploymentType>()"></select>
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="control-label" for="Ded">Dedication</label>
+                                        <select class="form-control" name="ded" id="Ded" asp-items="Html.GetEnumSelectList<MoE_HEMIS.Models.Dedication>()"></select>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label class="control-label" for="AcademicLevel">Academic Level</label>
+                                        <select class="form-control" name="academicLevel" id="AcademicLevel" asp-items="Html.GetEnumSelectList<MoE_HEMIS.Models.AcademicLevel>()"></select>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label class="control-label" for="Rank">Rank</label>
+                                        <select class="form-control" name="rank" id="Rank" asp-items="Html.GetEnumSelectList<MoE_HEMIS.Models.AcademicStaffRank>()"></select>
+                                    </div>
+
+                                </div>
+
+                                <div class="col-lg-4">
+
+                                    <div class="form-group">
+                                        <label class="control-label" for="ServiceYear">Service Year</label>
+                                        <input name="serviceYear" id="ServiceYear" class="form-control" type="number" />
+                                    </div>
+
+
+                                    <div class="form-group">
+                                        <label class="control-label" for="TeachingLoad">Teaching Load</label>
+                                        <input name="teachingLoad" id="TeachingLoad" class="form-control" type="number" />
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label class="control-label" for="FieldOfStudy">Field Of Study</label>
+                                        <input name="fieldOfStudy" id="FieldOfStudy" class="form-control" type="text" />
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="control-label" for="TeachingLoadRemark">Teaching Load Remark</label>
+                                        <input name="teachingLoadRemark" id="TeachingLoadRemark" class="form-control " type="text" />
+                                    </div>
+
+                                    <div class="form-group custom-checkbox ">
+                                        <label class="custom-control-label" for="IsExpatriate">Is Expatriate</label>
+                                        <input name="isExpatriate" id="IsExpatriate" type="checkbox" class="custom-control-input" value="false" />
+                                    </div>
+                                </div>
+                                  
+                                        
+                                        
+                                        
+                                      
+                            </div>
+                            <div class="form-group">
+                                <button type="submit" class="btn btn-primary">Submit </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr />
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="panel">
+                    <div class="panel-heading">
+                        <h3 class="page-title">Academic Staff List</h3>
+                    </div>
+                    <div class="panel-body table-responsive-lg">
+                        <table class="table table-sorting table-hover table-striped " id="academic-staff-table">
+                            <thead>
+                                <tr>
+                                    <th>Dept.</th>
+                                    <th>Name</th>
+                                    <th>Nat.</th>
+                                    <th>Exp.</th>
+                                    <th>Salary</th>
+                                    <th>BD.</th>
+                                    <th>Level</th>
+                                    <th>Ded.</th>
+                                    <th>Sex</th>
+                                    <th>Type</th>
+                                    <th>Service Year</th>
+                                    <th>Study Field</th>
+                                    <th>Rank</th>
+                                    <th></th>
+                                    <th></th>
+                                </tr>
+                            </thead>
+                            <tbody></tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="edit-model-modal" class="modal" role="dialog">
+    <div class="modal-dialog modal-lg">
+
+        <!-- Modal content-->
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title">Edit Academic Staff</h4>
+            </div>
+            <div class="modal-body">
+                <form id="edit-form">
+                    <div class="row">
+                        <div class="col-lg-4">
+                            <input type="number" hidden name="departmentId" value=@Model.Department.DepartmentId>
+                            <input type="number" hidden name="academicStaffId">
+
+                            <div class="form-group">
+                                <label class="control-label" for="Name">Name</label>
+                                <input name="name" id="Name" class="form-control" type="text" placeholder="Enter your name" />
+                            </div>
+                            <div class="form-group">
+                                <label class="control-label" for="Sex">Sex</label>
+                                <select class="form-control" name="sex" id="Sex" asp-items="Html.GetEnumSelectList<MoE_HEMIS.Models.Sex>()"></select>
+                            </div>
+
+
+                            <div class="form-group">
+                                <label class="control-label" for="BirthDate">Birth Date</label>
+                                <input name="birthDate" id="BirthDate" class="form-control" type="date" />
+                            </div>
+
+                            <div class="form-group ">
+                                <label class="control-label" for="Nationality">Nationality</label>
+                                <input name="nationality" id="Nationality" class="form-control" type="text" placeholder="Enter your nationality" />
+                            </div>
+                            <div class="form-group ">
+                                <label class="control-label" for="Salary">Salary</label>
+                                <input name="salary" id="Salary" class="form-control" type="number" min="100" />
+                            </div>
+
+
+
+                        </div>
+
+                        <div class="col-lg-4">
+                            <div class="form-group">
+                                <label class="control-label" for="Employment">Employment</label>
+                                <select class="form-control" name="employment" id="Employment" asp-items="Html.GetEnumSelectList<MoE_HEMIS.Models.EmploymentType>()"></select>
+                            </div>
+                            <div class="form-group">
+                                <label class="control-label" for="Ded">Dedication</label>
+                                <select class="form-control" name="ded" id="Ded" asp-items="Html.GetEnumSelectList<MoE_HEMIS.Models.Dedication>()"></select>
+                            </div>
+
+                            <div class="form-group">
+                                <label class="control-label" for="AcademicLevel">Academic Level</label>
+                                <select class="form-control" name="academicLevel" id="AcademicLevel" asp-items="Html.GetEnumSelectList<MoE_HEMIS.Models.AcademicLevel>()"></select>
+                            </div>
+
+                            <div class="form-group">
+                                <label class="control-label" for="Rank">Rank</label>
+                                <select class="form-control" name="rank" id="Rank" asp-items="Html.GetEnumSelectList<MoE_HEMIS.Models.AcademicStaffRank>()"></select>
+                            </div>
+
+                        </div>
+
+                        <div class="col-lg-4">
+
+                            <div class="form-group">
+                                <label class="control-label" for="ServiceYear">Service Year</label>
+                                <input name="serviceYear" id="ServiceYear" class="form-control" type="number" />
+                            </div>
+
+
+                            <div class="form-group">
+                                <label class="control-label" for="TeachingLoad">Teaching Load</label>
+                                <input name="teachingLoad" id="TeachingLoad" class="form-control" type="number" />
+                            </div>
+
+                            <div class="form-group">
+                                <label class="control-label" for="FieldOfStudy">Field Of Study</label>
+                                <input name="fieldOfStudy" id="FieldOfStudy" class="form-control" type="text" />
+                            </div>
+                            <div class="form-group">
+                                <label class="control-label" for="TeachingLoadRemark">Teaching Load Remark</label>
+                                <input name="teachingLoadRemark" id="TeachingLoadRemark" class="form-control " type="text" />
+                            </div>
+
+                            <div class="form-group custom-checkbox ">
+                                <label class="custom-control-label" for="IsExpatriate">Is Expatriate</label>
+                                <input name="isExpatriate" id="IsExpatriate" type="checkbox" class="custom-control-input"  />
+                            </div>
+                        </div>
+
+
+
+
+
+                    </div>
+                    <div class="form-group">
+                        <button type="submit" class="btn btn-primary">Submit </button>
+                    </div>
+
+
+                </form>
+            </div>
+
+        </div>
+
+    </div>
+</div>
+
+<!-- END MAIN -->
+@section Scripts
+{
+
+
+<script src="~/assets/vendor/data-tables/jquery.dataTables.min.js"></script>
+<script src="~/assets/vendor/data-tables/dataTables.bootstrap.min.js"></script>
+<script src="~/assets/vendor/data-tables/dataTables.colReorder.js"></script>
+<script src="~/assets/vendor/data-tables/dataTables.tableTools.js"></script>
+<script src="~/assets/vendor/toastr/toastr.min.js"></script>
+<script src="~/assets/scripts/Enums.js"></script>
+
+
+
+<script>
+         $("#IsExpatriate").change(function(){
+            $("#IsExpatriate").attr('value', this.checked);
+        });
+
+        var url = "/api/academicStaffs"
+        var tableId = "#academic-staff-table"
+        var newformId = "#new-form"
+        var editformId = "#edit-form"
+        var dataId = "academicStaffId"
+        var departmentId = @Model.Department.DepartmentId
+        var fetchUrl = "/api/academicStaffs/ByDepartment/" + departmentId
+
+        var columns = [
+            { data: "department.name" },
+            { data: "name" },
+            { data: "nationality" },
+            { data: "isExpatriate" },
+            { data: "salary" },
+            { data: "birthDate" },
+
+            {
+                data: "academicLevel",
+                render: function (data, type, academicStaff) {
+                    return ACADEMICSTAFFLEVEL[data]
+                }
+
+            },
+
+            { data: "ded" ,
+                render: function (data, type, academicStaff) {
+                    return STAFFDEDICATION[data]
+                }
+            },
+
+            { data: "sex" ,
+                render: function (data, type, academicStaff) {
+                    return SEX[data]
+                }
+            },
+
+            { data: "employment",
+                render: function (data, type, academicStaff) {
+                    return ACADEMICSTAFFEMPLOYEMENT[data]
+                }
+            },
+
+            { data: "serviceYear" },
+            { data: "fieldOfStudy" },
+
+            { data: "rank",
+                render: function (data, type, academicStaff) {
+                    return STAFFRANK[data]
+                }
+            },
+
+            {
+                data: "academicStaffId",
+                render: function (data, type, academicStaff) {
+                    return '<button type="button" class="btn btn-primary btn-sm edit-data-button" data-toggle="modal" data-target="#edit-model-modal">Edit</button> '
+                }
+            },
+            {
+                data: "academicStaffId",
+                render: function (data, type, academicStaff) {
+                    return '<button type = "button"  class="btn btn-danger btn-sm delete-data-button" data-model-id =' + data + ' > Delete</button > '
+                }
+            }
+        ]
+
+</script>
+<script src="~/assets/scripts/data-crud.js"></script>
+}

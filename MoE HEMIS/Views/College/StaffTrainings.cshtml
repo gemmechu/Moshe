@@ -1,0 +1,222 @@
+﻿@Model CollegeViewModel
+<partial name="SideNavView" />
+<!-- MAIN -->
+<div class="main">
+    <!-- MAIN CONTENT -->
+    <div class="main-content">
+        <!-- row -->
+        <div class="row" id="addStaffTraining">
+            <div class="col-md-9">
+                <h3 class="page-title">Add Staff Training </h3>
+                <!-- CONTACT FORM -->
+                <div class="panel">
+                    <div class="panel-heading">
+                        <h3 class="panel-title">Add Staff Trainings</h3>
+                    </div>
+                    <div class="panel-body">
+                        <form id="new-form">
+                            <div class="row">
+                                <input type="number" hidden name="collegeId" value=@Model.College.CollegeId>
+                                <div class="col-lg-6">
+                                    <div class="form-group">
+                                        <label class="control-label">Department</label>
+                                        <select name="departmentId" class="form-control">
+                                            @foreach (var department in Model.Departments)
+                                            {
+                                                <option value=@department.DepartmentId>@department.Name</option>
+                                            }
+                                        </select>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label class="control-label">Type</label>
+                                        <select name="type" class="form-control">
+                                            <option value="0">Diploma Training In Teaching</option>
+                                            <option value="1">Diploma Training For School Readers</option>
+                                        </select>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label class="control-label">Status</label>
+                                        <select name="status" class="form-control">
+                                            <option value="0">Regular</option>
+                                            <option value="1">Non Regular</option>
+                                        </select>
+                                    </div>
+
+                                </div>
+                                <div class="col-lg-6">
+
+
+                                    <div class="form-group">
+                                        <label class="control-label">Males</label>
+                                        <input type="number" class="form-control" name="males" placeholder="Males"
+                                               value="0" step="1">
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="control-label">Females</label>
+                                        <input type="number" class="form-control" name="females" placeholder="Females"
+                                               value="0" step="1">
+                                    </div>
+                                </div>
+
+                            </div>
+                            <button type="submit" class="btn btn-primary">Add Staff Training </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr />
+        <div class="row">
+            <div class="col-lg-11">
+                <h3 class="col-cyan"> Staff Training List</h3>
+                <div class="panel">
+                    <div class="panel-heading">
+
+                    </div>
+                    <div class="panel-body">
+                        <table class="table table-sorting table-hover table-striped" id="staffTraining-table">
+                            <thead>
+                                <tr>
+                                    <th>College</th>
+                                    <th>Department</th>
+                                    <th>Males</th>
+                                    <th>Females</th>
+                                    <th>Type</th>
+                                    <th>Status</th>
+                                    <th></th>
+                                    <th></th>
+                                </tr>
+                            </thead>
+                            <tbody></tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<div id="edit-model-modal" class="modal" role="dialog">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title">Edit Staff Training</h4>
+            </div>
+            <div class="modal-body">
+                <form id="edit-form">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <input type="number" hidden name="staffTrainingId">
+                            <div class="col-lg-12">
+                                <input type="number" hidden name="collegeId" value=@Model.College.CollegeId>
+                                <div class="col-lg-6">
+                                    <div class="form-group">
+                                        <label class="control-label">Department</label>
+                                        <select name="departmentId" class="form-control">
+                                            @foreach (var department in Model.Departments)
+                                            {
+                                                <option value=@department.DepartmentId>@department.Name</option>
+                                            }
+                                        </select>
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="control-label">Type</label>
+                                        <select name="type" class="form-control">
+                                            <option value="0">Diploma Training In Teaching</option>
+                                            <option value="1">Diploma Training For School Readers</option>
+                                        </select>
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="control-label">Status</label>
+                                        <select name="status" class="form-control">
+                                            <option value="0">Regular</option>
+                                            <option value="1">Non Regular</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+
+
+                                    <div class="form-group">
+                                        <label class="control-label">Males</label>
+                                        <input type="number" class="form-control" name="males" placeholder="Males"
+                                               value="0" step="1">
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="control-label">Females</label>
+                                        <input type="number" class="form-control" name="females" placeholder="Females"
+                                               value="0" step="1">
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Update </button>
+                </form>
+            </div>
+
+        </div>
+
+    </div>
+</div>
+
+@section Scripts
+    {
+
+    <script src="~/assets/vendor/data-tables/jquery.dataTables.min.js"></script>
+    <script src="~/assets/vendor/data-tables/dataTables.bootstrap.min.js"></script>
+    <script src="~/assets/vendor/data-tables/dataTables.colReorder.js"></script>
+    <script src="~/assets/vendor/data-tables/dataTables.tableTools.js"></script>
+    <script src="~/assets/vendor/toastr/toastr.min.js"></script>
+    <script src="~/assets/scripts/Enums.js"></script>
+
+    <script>
+
+        var url = "/api/StaffTrainings/"
+        var tableId = "#staffTraining-table"
+        var newformId = "#new-form"
+        var editformId = "#edit-form"
+        var dataId = "staffTrainingId"
+        var collegeid = @Model.College.CollegeId
+        var fetchUrl = "/api/StaffTrainings/ByCollege/" + collegeid
+
+        var columns = [
+            { data: "college.name" },
+            { data: "department.name" },
+            { data: "males" },
+            { data: "females" },
+            {
+                data: "type",
+                render: function (data, type, staffTraining) {
+                    return TRAININGTYPE[data]
+                }
+            },
+            {
+                data: "status",
+                render: function (data, type, staffTraining) {
+                    return TRAININGSTATUS[data]
+                }
+            },
+            {
+                data: "staffTrainingId",
+                render: function (data, type, staffTraining) {
+                    return '<button type="button" class="btn btn-primary btn-sm edit-data-button" data-toggle="modal" data-target="#edit-model-modal">Edit</button> '
+                }
+            },
+            {
+                data: "staffTrainingId",
+                render: function (data, type, staffTraining) {
+                     return   '<button type = "button"  class="btn btn-danger btn-sm delete-data-button" data-model-id =' + data + ' > Delete</button > '
+                }
+            }
+        ]
+
+
+    </script>
+    <script src="~/assets/scripts/data-crud.js"></script>
+}

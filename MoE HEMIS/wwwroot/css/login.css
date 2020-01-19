@@ -1,0 +1,36 @@
+﻿#loginul {
+    font-size: large;
+    letter-spacing: .05em;
+    text-transform: uppercase;
+    font-family: "nyala", sans-serif;
+}
+.bg-light {
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
+    font-family: Playfair;
+    font-size: medium;
+    background-color: rgba(255,255,255,0.9) !important;
+}
+body {
+    font-family: "nyala", sans-serif;
+    padding-top: 100px;
+    background-color: rgba(255,255,255,0.95) !important;
+}
+.page-title {
+    color: #034B60;
+      
+}
+.btn-primary {
+    border-radius: 0px;
+    font-size: large;
+    background: #034B60;
+    border: 2px solid #034B60;
+    color: #fff;
+    font-size: 12.6px;
+}
+        .btn-primary:hover, .btn-primary:focus {
+            background: #fff;
+            border: 2px solid #034B60;
+            color: #034B60;
+            
+            box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.3) !important
+        }

@@ -1,0 +1,188 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.1</TargetFramework>
+    <UserSecretsId>aspnet-MoE_HEMIS-DD8F3EDE-51DC-4F32-870B-82AD421CC75C</UserSecretsId>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Areas\Identity\Services\**" />
+    <Compile Remove="Data\Migrations\**" />
+    <Content Remove="Areas\Identity\Services\**" />
+    <Content Remove="Data\Migrations\**" />
+    <EmbeddedResource Remove="Areas\Identity\Services\**" />
+    <EmbeddedResource Remove="Data\Migrations\**" />
+    <None Remove="Areas\Identity\Services\**" />
+    <None Remove="Data\Migrations\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.App" />
+    <PackageReference Include="Microsoft.AspNetCore.Razor.Design" Version="2.1.2" PrivateAssets="All" />
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="2.1.9" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="wwwroot\assets\css\demo.css.map" />
+    <None Include="wwwroot\assets\css\main.css.map" />
+    <None Include="wwwroot\assets\scripts\init\chartjs-init.js" />
+    <None Include="wwwroot\assets\scripts\init\datatables-init.js" />
+    <None Include="wwwroot\assets\scripts\init\flot-chart-init.js" />
+    <None Include="wwwroot\assets\scripts\init\fullcalendar-init.js" />
+    <None Include="wwwroot\assets\scripts\init\gmap-init.js" />
+    <None Include="wwwroot\assets\scripts\init\peitychart-init.js" />
+    <None Include="wwwroot\assets\scripts\init\vector-init.js" />
+    <None Include="wwwroot\assets\scripts\init\weather-init.js" />
+    <None Include="wwwroot\assets\scripts\klorofil-common.js" />
+    <None Include="wwwroot\assets\scripts\sweetalert2.js" />
+    <None Include="wwwroot\assets\vendor\bootstrap\fonts\glyphicons-halflings-regular.svg" />
+    <None Include="wwwroot\assets\vendor\bootstrap\fonts\glyphicons-halflings-regular.woff2" />
+    <None Include="wwwroot\assets\vendor\bootstrap\js\bootstrap.js" />
+    <None Include="wwwroot\assets\vendor\bootstrap\js\bootstrap.min.js" />
+    <None Include="wwwroot\assets\vendor\bootstrap\js\npm.js" />
+    <None Include="wwwroot\assets\vendor\chartist\css\chartist-custom.css.map" />
+    <None Include="wwwroot\assets\vendor\chartist\js\chartist.js" />
+    <None Include="wwwroot\assets\vendor\chartist\js\chartist.min.js" />
+    <None Include="wwwroot\assets\vendor\chartist\map\chartist.css.map" />
+    <None Include="wwwroot\assets\vendor\chartist\map\chartist.min.js.map" />
+    <None Include="wwwroot\assets\vendor\chartist\scss\chartist.scss" />
+    <None Include="wwwroot\assets\vendor\data-tables\dataTables.bootstrap.min.js" />
+    <None Include="wwwroot\assets\vendor\data-tables\dataTables.colReorder.js" />
+    <None Include="wwwroot\assets\vendor\data-tables\datatables.min.js" />
+    <None Include="wwwroot\assets\vendor\data-tables\dataTables.tableTools.js" />
+    <None Include="wwwroot\assets\vendor\data-tables\jquery.dataTables.min.js" />
+    <None Include="wwwroot\assets\vendor\data-table\buttons.bootstrap.min.js" />
+    <None Include="wwwroot\assets\vendor\data-table\buttons.colVis.min.js" />
+    <None Include="wwwroot\assets\vendor\data-table\buttons.flash.min.js" />
+    <None Include="wwwroot\assets\vendor\data-table\buttons.html5.min.js" />
+    <None Include="wwwroot\assets\vendor\data-table\buttons.print.min.js" />
+    <None Include="wwwroot\assets\vendor\data-table\dataTables.bootstrap.min.js" />
+    <None Include="wwwroot\assets\vendor\data-table\dataTables.buttons.min.js" />
+    <None Include="wwwroot\assets\vendor\data-table\datatables.min.js" />
+    <None Include="wwwroot\assets\vendor\data-table\jquery-1.12.4.js" />
+    <None Include="wwwroot\assets\vendor\data-table\jquery.dataTables.min.js" />
+    <None Include="wwwroot\assets\vendor\data-table\jszip.min.js" />
+    <None Include="wwwroot\assets\vendor\data-table\pdfmake.min.js" />
+    <None Include="wwwroot\assets\vendor\data-table\vfs_fonts.js" />
+    <None Include="wwwroot\assets\vendor\font-awesome\fonts\fontawesome-webfont.svg" />
+    <None Include="wwwroot\assets\vendor\font-awesome\fonts\fontawesome-webfont.woff2" />
+    <None Include="wwwroot\assets\vendor\jquery-slimscroll\jquery.slimscroll.js" />
+    <None Include="wwwroot\assets\vendor\jquery-slimscroll\jquery.slimscroll.min.js" />
+    <None Include="wwwroot\assets\vendor\jquery.easy-pie-chart\angular.easypiechart.js" />
+    <None Include="wwwroot\assets\vendor\jquery.easy-pie-chart\angular.easypiechart.min.js" />
+    <None Include="wwwroot\assets\vendor\jquery.easy-pie-chart\easypiechart.js" />
+    <None Include="wwwroot\assets\vendor\jquery.easy-pie-chart\easypiechart.min.js" />
+    <None Include="wwwroot\assets\vendor\jquery.easy-pie-chart\jquery.easypiechart.js" />
+    <None Include="wwwroot\assets\vendor\jquery.easy-pie-chart\jquery.easypiechart.min.js" />
+    <None Include="wwwroot\assets\vendor\jquery\jquery.js" />
+    <None Include="wwwroot\assets\vendor\jquery\jquery.min.js" />
+    <None Include="wwwroot\assets\vendor\jquery\jquery.min.map" />
+    <None Include="wwwroot\assets\vendor\linearicons\fonts\Linearicons-Free.svg" />
+    <None Include="wwwroot\assets\vendor\linearicons\fonts\Linearicons-Free.woff2" />
+    <None Include="wwwroot\assets\vendor\toastr\toastr.js" />
+    <None Include="wwwroot\assets\vendor\toastr\toastr.min.js" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Update="Views\College\InternalRevenue.cshtml">
+      <Pack>$(IncludeRazorContentInPack)</Pack>
+    </Content>
+    <Content Update="Views\College\Budget.cshtml">
+      <Pack>$(IncludeRazorContentInPack)</Pack>
+    </Content>
+    <Content Update="Views\College\CostSharingReport.cshtml">
+      <Pack>$(IncludeRazorContentInPack)</Pack>
+    </Content>
+    <Content Update="Views\Department\IntakeCapacities.cshtml">
+      <Pack>$(IncludeRazorContentInPack)</Pack>
+    </Content>
+    <Content Update="Views\Department\DisabledStudents.cshtml">
+      <Pack>$(IncludeRazorContentInPack)</Pack>
+    </Content>
+    <Content Update="Views\Department\PostGraduateResearchPublications.cshtml">
+      <Pack>$(IncludeRazorContentInPack)</Pack>
+    </Content>
+    <Content Update="Views\Department\StaffPublications.cshtml">
+      <Pack>$(IncludeRazorContentInPack)</Pack>
+    </Content>
+    <Content Update="Views\Department\SpecialNeedGraduates.cshtml">
+      <Pack>$(IncludeRazorContentInPack)</Pack>
+    </Content>
+    <Content Update="Views\Department\RuralGraduates.cshtml">
+      <Pack>$(IncludeRazorContentInPack)</Pack>
+    </Content>
+    <Content Update="Views\Department\EconomicalDisadvantagedGraduates.cshtml">
+      <Pack>$(IncludeRazorContentInPack)</Pack>
+    </Content>
+    <Content Update="Views\Department\RuralEnrollments.cshtml">
+      <Pack>$(IncludeRazorContentInPack)</Pack>
+    </Content>
+    <Content Update="Views\Department\EconomicalDisadvantagedEnrollments.cshtml">
+      <Pack>$(IncludeRazorContentInPack)</Pack>
+    </Content>
+    <Content Update="Views\Department\ForeignerStudents.cshtml">
+      <Pack>$(IncludeRazorContentInPack)</Pack>
+    </Content>
+    <Content Update="Views\Department\EnrollmentByAge.cshtml">
+      <Pack>$(IncludeRazorContentInPack)</Pack>
+    </Content>
+    <Content Update="Views\Department\PastoralRegionEnrollments.cshtml">
+      <Pack>$(IncludeRazorContentInPack)</Pack>
+    </Content>
+    <Content Update="Views\Institution\UnjustifiableExpense.cshtml">
+      <Pack>$(IncludeRazorContentInPack)</Pack>
+    </Content>
+    <Content Update="Views\Institution\Department.cshtml">
+      <Pack>$(IncludeRazorContentInPack)</Pack>
+    </Content>
+    <Content Update="Views\College\SideNavView.cshtml">
+      <Pack>$(IncludeRazorContentInPack)</Pack>
+    </Content>
+    <Content Update="Views\College\Index.cshtml">
+      <Pack>$(IncludeRazorContentInPack)</Pack>
+    </Content>
+    <Content Update="Views\Department\Enrollments.cshtml">
+      <Pack>$(IncludeRazorContentInPack)</Pack>
+    </Content>
+    <Content Update="Views\Department\Graduates.cshtml">
+      <Pack>$(IncludeRazorContentInPack)</Pack>
+    </Content>
+    <Content Update="Views\Department\Index.cshtml">
+      <Pack>$(IncludeRazorContentInPack)</Pack>
+    </Content>
+    <Content Update="Views\Department\NewEnrollment.cshtml">
+      <Pack>$(IncludeRazorContentInPack)</Pack>
+    </Content>
+    <Content Update="Views\Department\ProspectiveGraduate.cshtml">
+      <Pack>$(IncludeRazorContentInPack)</Pack>
+    </Content>
+    <Content Update="Views\Department\SideNavView.cshtml">
+      <Pack>$(IncludeRazorContentInPack)</Pack>
+    </Content>
+    <Content Update="Views\Institution\UgReport.cshtml">
+      <Pack>$(IncludeRazorContentInPack)</Pack>
+    </Content>
+    <Content Update="Views\MainAdmin\Budget.cshtml">
+      <Pack>$(IncludeRazorContentInPack)</Pack>
+    </Content>
+    <Content Update="Views\MainAdmin\SideNavView.cshtml">
+      <Pack>$(IncludeRazorContentInPack)</Pack>
+    </Content>
+    <Content Update="Views\Shared\Input\_EconomicQuintile.cshtml">
+      <Pack>$(IncludeRazorContentInPack)</Pack>
+    </Content>
+    <Content Update="Views\Shared\Input\_Male.cshtml">
+      <Pack>$(IncludeRazorContentInPack)</Pack>
+    </Content>
+    <Content Update="Views\Shared\Input\_Female.cshtml">
+      <Pack>$(IncludeRazorContentInPack)</Pack>
+    </Content>
+    <Content Update="Views\Shared\Input\_StudyProgram.cshtml">
+      <Pack>$(IncludeRazorContentInPack)</Pack>
+    </Content>
+    <Content Update="Views\Shared\Input\_StudyLevel.cshtml">
+      <Pack>$(IncludeRazorContentInPack)</Pack>
+    </Content>
+  </ItemGroup>
+
+</Project>

@@ -1,0 +1,273 @@
+﻿@Model  DepartmentViewModel
+<partial name="SideNavView" />
+<!-- MAIN -->
+<div class="main">
+    <!-- MAIN CONTENT -->
+    <div class="main-content">
+
+
+
+        <!-- row -->
+        <div class="row" id="addStudentList">
+            <div class="col-md-9">
+                <h3 class="page-title">Add Economical Disadvantaged Enrollment</h3>
+                <!-- CONTACT FORM -->
+                <div class="panel">
+                    <div class="panel-heading">
+                        <h3 class="panel-title"> Economical Disadvantaged Enrollment </h3>
+                    </div>
+                    <div class="panel-body">
+                        <form id="new-form">
+                            <div class="row">
+                                <div class="col-lg-6">
+
+                                    <input type="number" hidden name="collegeId" value=@Model.Department.CollegeId>
+                                    <input type="number" hidden name="departmentId" value=@Model.Department.DepartmentId>
+                                    <div class="form-group">
+                                        <label class="control-label">Study Program</label>
+
+                                        <select name="studyProgram" class="form-control">
+                                            <option value="0">Day Time</option>
+                                            <option value="1">Extension</option>
+                                            <option value="2">Summer</option>
+                                            <option value="3">Distance</option>
+                                            <option value="4">Regular</option>
+
+                                        </select>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label class="control-label">Study Level</label>
+
+                                        <select name="studyLevel" class="form-control">
+                                            <option value="0">Under Graduate</option>
+                                            <option value="1">Graduate</option>
+
+                                        </select>
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="control-label">Year</label>
+
+                                        <select name="year" class="form-control">
+                                            <option value="0">I</option>
+                                            <option value="1">II</option>
+                                            <option value="2">III</option>
+                                            <option value="3">IV</option>
+                                            <option value="4">V</option>
+                                            <option value="5">SUMMER VI AND ABOVE</option>
+
+                                        </select>
+                                    </div>
+                                    <partial name="~/Views/Shared/Input/_EconomicQuintile.cshtml" />
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="form-group">
+                                        <label class="control-label">Female</label>
+                                        <input type="number" class="form-control" name="femals" placeholder="Female"
+                                               value="0">
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="control-label">Male</label>
+                                        <input type="number" class="form-control" name="males" placeholder="Male" value="0">
+                                    </div>
+
+
+                                </div>
+                            </div>
+
+                            <button type="submit" class="btn btn-primary">Add  </button>
+                        </form>
+                    </div>
+                </div>
+                <!-- END CONTACT FORM -->
+
+            </div>
+            <!--/ col-lg-6 -->
+        </div>
+
+        <!-- / row -->
+        <hr>
+        <!-- row -->
+        <div class="row">
+            <div class="col-lg-11">
+                <h3 class="col-cyan"> Economical Disadvantaged Enrollment List</h3>
+                <div class="panel">
+                    <div class="panel-heading">
+
+                    </div>
+                    <div class="panel-body">
+                        <table class="table table-sorting table-hover table-striped" id="enrollment-table">
+                            <thead>
+                                <tr>
+                                    <th>Program</th>
+                                    <th>Level</th>
+                                    <th>Year</th>
+                                    <th>Male</th>
+                                    <th>Female</th>
+                                    <th></th>
+                                    <th></th>
+                                </tr>
+                            </thead>
+                            <tbody></tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- / row -->
+    </div>
+    <!-- END MAIN CONTENT -->
+</div>
+<!-- END MAIN -->
+<!-- EDIT MODAL -->
+<div id="edit-model-modal" class="modal" role="dialog">
+    <div class="modal-dialog modal-lg">
+
+        <!-- Modal content-->
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title">Edit Economical Disadvantaged Enrollment</h4>
+            </div>
+            <div class="modal-body">
+                <form id="edit-form">
+                    <div class="row">
+                        <div class="col-lg-6">
+
+                            <input type="number" hidden name="economicalDisadvantagedEnrollmentId">
+
+                            <div class="form-group">
+                                <label class="control-label">Study Program</label>
+
+                                <select name="studyProgram" class="form-control">
+                                    <option value="0">Day Time</option>
+                                    <option value="1">Extension</option>
+                                    <option value="2">Summer</option>
+                                    <option value="3">Distance</option>
+
+                                </select>
+                            </div>
+
+
+
+                            <div class="form-group">
+                                <label class="control-label">Study Level</label>
+
+                                <select name="studyLevel" class="form-control">
+                                    <option value="0">Under Graduate</option>
+                                    <option value="1">Graduate</option>
+
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label class="control-label">Year</label>
+
+                                <select name="year" class="form-control">
+                                    <option value="0">I</option>
+                                    <option value="1">II</option>
+                                    <option value="2">III</option>
+                                    <option value="3">IV</option>
+                                    <option value="4">V</option>
+                                    <option value="5">SUMMER VI AND ABOVE</option>
+
+                                </select>
+                            </div>
+
+
+
+                        </div>
+                        <div class="col-lg-6">
+
+
+                            <div class="form-group">
+                                <label class="control-label">Female</label>
+                                <input type="number" class="form-control" name="femals" placeholder="Female"
+                                       value="0">
+                            </div>
+                            <div class="form-group">
+                                <label class="control-label">Male</label>
+                                <input type="number" class="form-control" name="males" placeholder="Male" value="0">
+                            </div>
+
+
+                        </div>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary">Update </button>
+                </form>
+            </div>
+
+        </div>
+
+    </div>
+</div>
+
+@section Scripts
+    {
+
+    <script src="~/assets/vendor/data-tables/jquery.dataTables.min.js"></script>
+    <script src="~/assets/vendor/data-tables/dataTables.bootstrap.min.js"></script>
+    <script src="~/assets/vendor/data-tables/dataTables.colReorder.js"></script>
+    <script src="~/assets/vendor/data-tables/dataTables.tableTools.js"></script>
+    <script src="~/assets/vendor/toastr/toastr.min.js"></script>
+    <script src="~/assets/scripts/Enums.js"></script>
+
+
+
+    <script>
+        //var STUDYLEVELS = ["Under Graduate", "Graduate"]
+        //var STUDYPROGRAM = ['Day Time', 'Extension', 'summer', 'Distance']
+        //var STUDYYEAR = ['I', 'II', 'III', 'IV', 'V', 'SUMMER VI AND ABOVE']
+
+        var departmentId = @Model.Department.DepartmentId
+        var fetchurl = "/api/EconomicalDisadvantagedEnrollments/ByDepartment/" + departmentId
+        var url = "/api/EconomicalDisadvantagedEnrollments/"
+        var tableId = "#enrollment-table"
+        var newformId = "#new-form"
+        var editformId = "#edit-form"
+        var dataId = "economicalDisadvantagedEnrollmentId"
+
+
+        var columns = [
+            {
+                data: "program",
+                render: function (data, type, enrollment) {
+                    return STUDYPROGRAM[data]
+                }
+            },
+            {
+                data: "year",
+                render: function (data, type, enrollment) {
+                    return STUDYYEAR[data]
+                }
+            },
+       
+            {
+                data: "level",
+                render: function (data, type, enrollment) {
+                    return STUDYLEVELS[data]
+                }
+            },
+            { data: "males" },
+            { data: "femals" },
+            {
+                data: dataId,
+                render: function (data, type, institution) {
+                    return '<button type="button" class="btn btn-primary btn-sm edit-data-button" data-toggle="modal" data-target="#edit-model-modal">Edit</button> ' 
+                   
+                       
+                }
+            },
+            {
+                data: dataId,
+                render: function (data, type, institution) {
+                    return  '<button type = "button"  class="btn btn-danger btn-sm delete-data-button" data-model-id =' + data + ' > Delete</button > '
+                }
+            }
+            
+        ]
+
+
+    </script>
+    <script src="~/assets/scripts/data-crud.js"></script>
+}

@@ -12538,11 +12538,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\gemme\\OneDrive\\Documents\\moe-hemis-back-end\\MoE HEMIS\\MoE HEMIS.csproj",
+      "projectUniqueName": "C:\\Users\\gemme\\OneDrive\\Documents\\files\\4th year\\DBA\\assignment\\2. Net MVC 5 app\\Moshe\\MoE HEMIS\\MoE HEMIS.csproj",
       "projectName": "MoE HEMIS",
-      "projectPath": "C:\\Users\\gemme\\OneDrive\\Documents\\moe-hemis-back-end\\MoE HEMIS\\MoE HEMIS.csproj",
+      "projectPath": "C:\\Users\\gemme\\OneDrive\\Documents\\files\\4th year\\DBA\\assignment\\2. Net MVC 5 app\\Moshe\\MoE HEMIS\\MoE HEMIS.csproj",
       "packagesPath": "C:\\Users\\gemme\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\gemme\\OneDrive\\Documents\\moe-hemis-back-end\\MoE HEMIS\\obj\\",
+      "outputPath": "C:\\Users\\gemme\\OneDrive\\Documents\\files\\4th year\\DBA\\assignment\\2. Net MVC 5 app\\Moshe\\MoE HEMIS\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
